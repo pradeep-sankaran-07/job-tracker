@@ -139,14 +139,6 @@
     .modal-tab-btn.active { background: var(--surface); border-color: var(--border); color: var(--text); }
     .notes-text { white-space: pre-wrap; line-height: 1.7; color: var(--text-secondary); font-size: 13px; }
 
-    /* ── Token modal ── */
-    .token-box { max-width: 420px; }
-    .token-box .modal-body { font-size: 13px; }
-    .token-box .modal-body p { color: var(--text-secondary); margin-bottom: 12px; white-space: normal; }
-    .token-box input { width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-family: monospace; margin-bottom: 8px; outline: none; }
-    .token-box input:focus { border-color: var(--accent); }
-    .token-status { font-size: 12px; color: var(--strong); margin-top: 4px; min-height: 18px; }
-
     /* ── Loading ── */
     .loading { text-align: center; padding: 40px; color: var(--text-secondary); }
     .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .6s linear infinite; margin-right: 8px; vertical-align: middle; }
@@ -166,7 +158,6 @@
   <div class="header-right">
     <span id="last-updated"></span>
     <button class="btn btn-ghost" onclick="loadData()">↻ Refresh</button>
-    <button class="btn btn-ghost" onclick="openTokenModal()">⚙ Token</button>
   </div>
 </header>
 
@@ -232,30 +223,12 @@
   </div>
 </div>
 
-<!-- ── Token modal ── -->
-<div class="modal-backdrop" id="token-modal" onclick="closeModal('token-modal')">
-  <div class="modal-box token-box" onclick="event.stopPropagation()">
-    <div class="modal-header">
-      <div><h2>GitHub Token Setup</h2></div>
-      <button class="modal-close" onclick="closeModal('token-modal')">✕</button>
-    </div>
-    <div class="modal-body">
-      <p>A GitHub Personal Access Token with <strong>public_repo</strong> scope is needed to save status changes back to the repo. It's stored only in your browser (localStorage) — never sent anywhere except GitHub's API.</p>
-      <p>Create one at <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=JobTracker" target="_blank" style="color:var(--accent)">github.com/settings/tokens</a> → select <em>public_repo</em> scope.</p>
-      <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off" />
-      <div style="display:flex;gap:8px;">
-        <button class="btn btn-primary" onclick="saveToken()">Save token</button>
-        <button class="btn btn-ghost" style="background:var(--status-wna-bg);color:var(--status-wna);" onclick="clearToken()">Clear</button>
-      </div>
-      <div class="token-status" id="token-status"></div>
-    </div>
-  </div>
-</div>
 
 <script>
 const REPO = 'pradeep-sankaran-07/job-tracker';
 const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main/jobs.json`;
 const API_URL  = `https://api.github.com/repos/${REPO}/contents/jobs.json`;
+const GH_TOKEN = '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';
 
 let state = { jobs: [], archive: [] };
 let fileSha = null;
@@ -264,7 +237,6 @@ let fileSha = null;
 function esc(s) {
   return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
-function token() { return localStorage.getItem('gh_token') || ''; }
 function toast(msg, type = '') {
   const el = document.getElementById('toast');
   el.textContent = msg;
@@ -299,8 +271,7 @@ async function loadData() {
     const r = await fetch(`${RAW_BASE}?nocache=${Date.now()}`);
     if (!r.ok) throw new Error(`HTTP ${r.status}`);
     state = await r.json();
-    // Also grab SHA if we have a token
-    if (token()) await refreshSha();
+    await refreshSha();
     render();
     const ts = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
     document.getElementById('last-updated').textContent = `Updated ${ts}`;
@@ -311,7 +282,7 @@ async function loadData() {
 
 async function refreshSha() {
   try {
-    const r = await fetch(API_URL, { headers: { Authorization: `token ${token()}` } });
+    const r = await fetch(API_URL, { headers: { Authorization: `token ${GH_TOKEN}` } });
     const j = await r.json();
     fileSha = j.sha;
   } catch(_) {}
@@ -382,12 +353,6 @@ async function handleStatusChange(select) {
   const jobId = parseInt(select.dataset.id, 10);
   const newStatus = select.value;
 
-  if (!token()) {
-    toast('Set your GitHub token first (⚙ Token button)', 'error');
-    await loadData();
-    return;
-  }
-
   select.classList.add('saving');
   select.disabled = true;
 
@@ -403,7 +368,7 @@ async function handleStatusChange(select) {
     const res = await fetch(API_URL, {
       method: 'PUT',
       headers: {
-        Authorization: `token ${token()}`,
+        Authorization: `token ${GH_TOKEN}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
@@ -475,34 +440,6 @@ function showModalTab(tab, jobId) {
   } else {
     bodyEl.innerHTML = `<p class="notes-text">${esc(job.notes)}</p>`;
   }
-}
-
-// ── Token modal ──────────────────────────────────────────────────────────
-function openTokenModal() {
-  const t = token();
-  const input = document.getElementById('token-input');
-  input.value = t ? '••••••••••••••••' : '';
-  const statusEl = document.getElementById('token-status');
-  statusEl.textContent = t ? '✓ Token is set' : '';
-  openModal('token-modal');
-}
-
-function saveToken() {
-  const val = document.getElementById('token-input').value.trim();
-  if (!val || val.startsWith('•')) { toast('No change', ''); return; }
-  localStorage.setItem('gh_token', val);
-  document.getElementById('token-status').textContent = '✓ Saved';
-  refreshSha();
-  toast('Token saved', 'success');
-  setTimeout(() => closeModal('token-modal'), 800);
-}
-
-function clearToken() {
-  localStorage.removeItem('gh_token');
-  document.getElementById('token-input').value = '';
-  document.getElementById('token-status').textContent = '';
-  fileSha = null;
-  toast('Token cleared', '');
 }
 
 // ── Modal helpers ──────────────────────────────────────────────────────────
