@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Tracker</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f4f5f7;
+      --surface: #ffffff;
+      --border: #e2e4e9;
+      --text: #1a1d23;
+      --text-secondary: #5c6270;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --strong: #16a34a;
+      --strong-bg: #dcfce7;
+      --moderate: #d97706;
+      --moderate-bg: #fef3c7;
+      --status-new: #2563eb;
+      --status-new-bg: #dbeafe;
+      --status-applied: #16a34a;
+      --status-applied-bg: #dcfce7;
+      --status-wna: #dc2626;
+      --status-wna-bg: #fee2e2;
+      --status-fake: #9ca3af;
+      --status-fake-bg: #f3f4f6;
+      --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+      --shadow-lg: 0 10px 25px rgba(0,0,0,.12);
+    }
+
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.5; }
+
+    /* ── Header ── */
+    header { background: #1e293b; color: #fff; padding: 0 24px; height: 56px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    header h1 { font-size: 17px; font-weight: 600; letter-spacing: -.3px; }
+    header h1 span { color: #94a3b8; font-weight: 400; font-size: 13px; margin-left: 8px; }
+    .header-right { display: flex; align-items: center; gap: 10px; }
+    #last-updated { color: #94a3b8; font-size: 12px; }
+    .btn { display: inline-flex; align-items: center; gap: 5px; padding: 6px 12px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 500; transition: background .15s; }
+    .btn-ghost { background: rgba(255,255,255,.1); color: #fff; }
+    .btn-ghost:hover { background: rgba(255,255,255,.18); }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); }
+
+    /* ── Toast ── */
+    #toast { position: fixed; bottom: 24px; right: 24px; background: #1e293b; color: #fff; padding: 10px 16px; border-radius: 8px; font-size: 13px; opacity: 0; pointer-events: none; transition: opacity .2s; z-index: 9999; }
+    #toast.show { opacity: 1; }
+    #toast.error { background: #dc2626; }
+    #toast.success { background: #16a34a; }
+
+    /* ── Tabs ── */
+    .tabs { display: flex; gap: 4px; padding: 16px 24px 0; border-bottom: 1px solid var(--border); background: var(--bg); }
+    .tab-btn { padding: 8px 16px; border-radius: 6px 6px 0 0; border: 1px solid transparent; border-bottom: none; cursor: pointer; font-size: 13px; font-weight: 500; color: var(--text-secondary); background: transparent; margin-bottom: -1px; transition: all .15s; }
+    .tab-btn.active { background: var(--surface); border-color: var(--border); color: var(--text); }
+    .tab-btn:not(.active):hover { color: var(--text); background: rgba(0,0,0,.03); }
+
+    /* ── Content ── */
+    .tab-content { display: none; padding: 20px 24px; }
+    .tab-content.active { display: block; }
+
+    /* ── Table ── */
+    .table-wrap { background: var(--surface); border-radius: 10px; border: 1px solid var(--border); overflow: hidden; box-shadow: var(--shadow); }
+    table { width: 100%; border-collapse: collapse; }
+    thead th { background: #f8f9fc; color: var(--text-secondary); font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .6px; padding: 10px 14px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+    tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #fafbff; }
+    td { padding: 12px 14px; vertical-align: top; }
+
+    /* ── Fit badge ── */
+    .badge { display: inline-block; padding: 2px 8px; border-radius: 20px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+    .badge.strong { background: var(--strong-bg); color: var(--strong); }
+    .badge.moderate { background: var(--moderate-bg); color: var(--moderate); }
+
+    /* ── Role cell ── */
+    .role-title { font-weight: 600; color: var(--text); line-height: 1.3; }
+    .role-company { color: var(--text-secondary); font-size: 13px; margin-top: 2px; }
+
+    /* ── Status ── */
+    .status-badge { display: inline-block; padding: 3px 9px; border-radius: 20px; font-size: 11px; font-weight: 600; white-space: nowrap; }
+    .status-badge.new { background: var(--status-new-bg); color: var(--status-new); }
+    .status-badge.applied { background: var(--status-applied-bg); color: var(--status-applied); }
+    .status-badge.wna { background: var(--status-wna-bg); color: var(--status-wna); }
+    .status-badge.fake { background: var(--status-fake-bg); color: var(--status-fake); }
+
+    select.status-select {
+      padding: 4px 24px 4px 8px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      outline: none;
+      background: var(--surface);
+      color: var(--text);
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%235c6270'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 7px center;
+      transition: border-color .15s;
+    }
+    select.status-select:hover { border-color: #94a3b8; }
+    select.status-select:focus { border-color: var(--accent); }
+    select.status-select.saving { opacity: .5; pointer-events: none; }
+
+    /* ── Action buttons ── */
+    .actions { display: flex; gap: 4px; align-items: center; }
+    .icon-btn { background: none; border: 1px solid var(--border); border-radius: 6px; cursor: pointer; padding: 4px 7px; font-size: 13px; color: var(--text-secondary); transition: all .15s; white-space: nowrap; }
+    .icon-btn:hover { background: var(--bg); border-color: #94a3b8; color: var(--text); }
+    .icon-btn a { color: inherit; text-decoration: none; }
+
+    /* ── Date ── */
+    .date-cell { color: var(--text-secondary); font-size: 12px; white-space: nowrap; }
+
+    /* ── Location ── */
+    .loc-cell { color: var(--text-secondary); font-size: 12px; max-width: 140px; }
+
+    /* ── Empty state ── */
+    .empty { text-align: center; padding: 48px 24px; color: var(--text-secondary); }
+    .empty-icon { font-size: 36px; margin-bottom: 12px; }
+
+    /* ── Modal ── */
+    .modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 24px; opacity: 0; transition: opacity .2s; }
+    .modal-backdrop.open { opacity: 1; }
+    .modal-box { background: var(--surface); border-radius: 12px; box-shadow: var(--shadow-lg); max-width: 640px; width: 100%; max-height: 80vh; display: flex; flex-direction: column; transform: translateY(12px); transition: transform .2s; }
+    .modal-backdrop.open .modal-box { transform: translateY(0); }
+    .modal-header { display: flex; align-items: flex-start; justify-content: space-between; padding: 20px 20px 12px; border-bottom: 1px solid var(--border); gap: 12px; }
+    .modal-header h2 { font-size: 15px; font-weight: 600; line-height: 1.4; }
+    .modal-header .company { color: var(--text-secondary); font-size: 13px; margin-top: 2px; }
+    .modal-close { background: none; border: none; cursor: pointer; color: var(--text-secondary); font-size: 18px; padding: 2px 6px; border-radius: 4px; flex-shrink: 0; }
+    .modal-close:hover { background: var(--bg); }
+    .modal-body { padding: 20px; overflow-y: auto; flex: 1; }
+    .modal-body p { white-space: pre-wrap; line-height: 1.7; color: var(--text); font-size: 14px; }
+    .modal-tabs { display: flex; gap: 6px; padding: 12px 20px 0; border-bottom: 1px solid var(--border); }
+    .modal-tab-btn { padding: 5px 12px; border-radius: 6px 6px 0 0; border: 1px solid transparent; border-bottom: none; background: none; cursor: pointer; font-size: 12px; font-weight: 500; color: var(--text-secondary); margin-bottom: -1px; }
+    .modal-tab-btn.active { background: var(--surface); border-color: var(--border); color: var(--text); }
+    .notes-text { white-space: pre-wrap; line-height: 1.7; color: var(--text-secondary); font-size: 13px; }
+
+    /* ── Token modal ── */
+    .token-box { max-width: 420px; }
+    .token-box .modal-body { font-size: 13px; }
+    .token-box .modal-body p { color: var(--text-secondary); margin-bottom: 12px; white-space: normal; }
+    .token-box input { width: 100%; padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 13px; font-family: monospace; margin-bottom: 8px; outline: none; }
+    .token-box input:focus { border-color: var(--accent); }
+    .token-status { font-size: 12px; color: var(--strong); margin-top: 4px; min-height: 18px; }
+
+    /* ── Loading ── */
+    .loading { text-align: center; padding: 40px; color: var(--text-secondary); }
+    .spinner { display: inline-block; width: 20px; height: 20px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .6s linear infinite; margin-right: 8px; vertical-align: middle; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Stats bar ── */
+    .stats-bar { display: flex; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
+    .stat { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px 16px; display: flex; flex-direction: column; box-shadow: var(--shadow); }
+    .stat-value { font-size: 22px; font-weight: 700; color: var(--text); line-height: 1; }
+    .stat-label { font-size: 11px; color: var(--text-secondary); margin-top: 3px; text-transform: uppercase; letter-spacing: .5px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Job Tracker <span id="header-subtitle"></span></h1>
+  <div class="header-right">
+    <span id="last-updated"></span>
+    <button class="btn btn-ghost" onclick="loadData()">↻ Refresh</button>
+    <button class="btn btn-ghost" onclick="openTokenModal()">⚙ Token</button>
+  </div>
+</header>
+
+<div id="toast"></div>
+
+<!-- ── Tabs ── -->
+<div class="tabs">
+  <button class="tab-btn active" id="tab-active" onclick="switchTab('active')">Active</button>
+  <button class="tab-btn" id="tab-archive" onclick="switchTab('archive')">Archive</button>
+</div>
+
+<!-- ── Active tab ── -->
+<div class="tab-content active" id="content-active">
+  <div class="stats-bar" id="stats-bar"></div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Fit</th>
+          <th>Role</th>
+          <th>Location</th>
+          <th>Found</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="active-tbody"><tr><td colspan="6" class="loading"><span class="spinner"></span>Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── Archive tab ── -->
+<div class="tab-content" id="content-archive">
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Fit</th>
+          <th>Role</th>
+          <th>Location</th>
+          <th>Found</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="archive-tbody"><tr><td colspan="6" class="loading"><span class="spinner"></span>Loading…</td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── Cover letter / Notes modal ── -->
+<div class="modal-backdrop" id="job-modal" onclick="closeModal('job-modal')">
+  <div class="modal-box" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <div>
+        <h2 id="modal-title"></h2>
+        <div class="company" id="modal-company"></div>
+      </div>
+      <button class="modal-close" onclick="closeModal('job-modal')">✕</button>
+    </div>
+    <div class="modal-tabs" id="modal-tabs"></div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<!-- ── Token modal ── -->
+<div class="modal-backdrop" id="token-modal" onclick="closeModal('token-modal')">
+  <div class="modal-box token-box" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <div><h2>GitHub Token Setup</h2></div>
+      <button class="modal-close" onclick="closeModal('token-modal')">✕</button>
+    </div>
+    <div class="modal-body">
+      <p>A GitHub Personal Access Token with <strong>public_repo</strong> scope is needed to save status changes back to the repo. It's stored only in your browser (localStorage) — never sent anywhere except GitHub's API.</p>
+      <p>Create one at <a href="https://github.com/settings/tokens/new?scopes=public_repo&description=JobTracker" target="_blank" style="color:var(--accent)">github.com/settings/tokens</a> → select <em>public_repo</em> scope.</p>
+      <input type="password" id="token-input" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off" />
+      <div style="display:flex;gap:8px;">
+        <button class="btn btn-primary" onclick="saveToken()">Save token</button>
+        <button class="btn btn-ghost" style="background:var(--status-wna-bg);color:var(--status-wna);" onclick="clearToken()">Clear</button>
+      </div>
+      <div class="token-status" id="token-status"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const REPO = 'pradeep-sankaran-07/job-tracker';
+const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main/jobs.json`;
+const API_URL  = `https://api.github.com/repos/${REPO}/contents/jobs.json`;
+
+let state = { jobs: [], archive: [] };
+let fileSha = null;
+
+// ── Utils ──────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function token() { return localStorage.getItem('gh_token') || ''; }
+function toast(msg, type = '') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = 'show' + (type ? ' ' + type : '');
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.className = '', 2800);
+}
+function statusClass(s) {
+  if (!s) return 'new';
+  const l = s.toLowerCase();
+  if (l === 'applied') return 'applied';
+  if (l === 'will not apply') return 'wna';
+  if (l === 'not a real job') return 'fake';
+  return 'new';
+}
+function fitClass(f) { return (f || '').toLowerCase() === 'strong' ? 'strong' : 'moderate'; }
+function fmtDate(d) {
+  if (!d) return '';
+  const parts = String(d).split('-');
+  if (parts.length === 3) {
+    const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    return `${parts[2]} ${months[parseInt(parts[1],10)-1]}`;
+  }
+  return d;
+}
+
+// ── Load data ──────────────────────────────────────────────────────────────
+async function loadData() {
+  document.getElementById('active-tbody').innerHTML = '<tr><td colspan="6" class="loading"><span class="spinner"></span>Loading…</td></tr>';
+  document.getElementById('archive-tbody').innerHTML = '<tr><td colspan="6" class="loading"><span class="spinner"></span>Loading…</td></tr>';
+  try {
+    const r = await fetch(`${RAW_BASE}?nocache=${Date.now()}`);
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    state = await r.json();
+    // Also grab SHA if we have a token
+    if (token()) await refreshSha();
+    render();
+    const ts = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+    document.getElementById('last-updated').textContent = `Updated ${ts}`;
+  } catch(e) {
+    document.getElementById('active-tbody').innerHTML = `<tr><td colspan="6" class="empty"><div class="empty-icon">⚠️</div>Failed to load: ${esc(e.message)}</td></tr>`;
+  }
+}
+
+async function refreshSha() {
+  try {
+    const r = await fetch(API_URL, { headers: { Authorization: `token ${token()}` } });
+    const j = await r.json();
+    fileSha = j.sha;
+  } catch(_) {}
+}
+
+// ── Render ─────────────────────────────────────────────────────────────────
+function render() {
+  renderStats();
+  renderTable('active-tbody', state.jobs, true);
+  renderTable('archive-tbody', state.archive, false);
+  document.getElementById('tab-active').textContent  = `Active (${state.jobs.length})`;
+  document.getElementById('tab-archive').textContent = `Archive (${state.archive.length})`;
+  document.getElementById('header-subtitle').textContent = `${state.jobs.length} active`;
+}
+
+function renderStats() {
+  const jobs = state.jobs;
+  const strong   = jobs.filter(j => (j.fit||'').toLowerCase() === 'strong').length;
+  const moderate = jobs.filter(j => (j.fit||'').toLowerCase() === 'moderate').length;
+  const applied  = state.archive.filter(j => (j.status||'').toLowerCase() === 'applied').length;
+  document.getElementById('stats-bar').innerHTML = `
+    <div class="stat"><span class="stat-value">${jobs.length}</span><span class="stat-label">Active</span></div>
+    <div class="stat"><span class="stat-value" style="color:var(--strong)">${strong}</span><span class="stat-label">Strong fit</span></div>
+    <div class="stat"><span class="stat-value" style="color:var(--moderate)">${moderate}</span><span class="stat-label">Moderate fit</span></div>
+    <div class="stat"><span class="stat-value">${applied}</span><span class="stat-label">Applied (total)</span></div>
+  `;
+}
+
+function renderTable(tbodyId, rows, editable) {
+  const tbody = document.getElementById(tbodyId);
+  if (!rows || rows.length === 0) {
+    tbody.innerHTML = `<tr><td colspan="6" class="empty"><div class="empty-icon">📭</div>Nothing here yet.</td></tr>`;
+    return;
+  }
+  tbody.innerHTML = rows.map(job => {
+    const sc = statusClass(job.status);
+    const fc = fitClass(job.fit);
+    const hasCL = !!job.cover_letter;
+    const hasNotes = !!job.notes;
+    const statusDropdown = editable ? `
+      <select class="status-select" data-id="${job.id}" onchange="handleStatusChange(this)">
+        <option value="New" ${job.status==='New'?'selected':''}>New</option>
+        <option value="Applied" ${job.status==='Applied'?'selected':''}>Applied</option>
+        <option value="Will not apply" ${job.status==='Will not apply'?'selected':''}>Will not apply</option>
+        <option value="Not a real job" ${job.status==='Not a real job'?'selected':''}>Not a real job</option>
+      </select>
+    ` : `<span class="status-badge ${sc}">${esc(job.status)}</span>`;
+
+    return `<tr>
+      <td><span class="badge ${fc}">${esc(job.fit)}</span></td>
+      <td>
+        <div class="role-title">${esc(job.title)}</div>
+        <div class="role-company">${esc(job.company)}</div>
+      </td>
+      <td class="loc-cell">${esc(job.location)}</td>
+      <td class="date-cell">${fmtDate(job.date_found)}</td>
+      <td>${statusDropdown}</td>
+      <td class="actions">
+        ${job.source ? `<button class="icon-btn" onclick="window.open('${esc(job.source)}','_blank')" title="View job posting">🔗</button>` : ''}
+        ${(hasCL || hasNotes) ? `<button class="icon-btn" onclick="openJobModal(${job.id})" title="${hasCL ? 'Cover letter' : 'Notes'}">📄</button>` : ''}
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+// ── Status change ──────────────────────────────────────────────────────────
+async function handleStatusChange(select) {
+  const jobId = parseInt(select.dataset.id, 10);
+  const newStatus = select.value;
+
+  if (!token()) {
+    toast('Set your GitHub token first (⚙ Token button)', 'error');
+    await loadData();
+    return;
+  }
+
+  select.classList.add('saving');
+  select.disabled = true;
+
+  try {
+    // Update local state
+    const job = state.jobs.find(j => j.id === jobId);
+    if (job) job.status = newStatus;
+
+    // Get fresh SHA if needed
+    if (!fileSha) await refreshSha();
+
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const res = await fetch(API_URL, {
+      method: 'PUT',
+      headers: {
+        Authorization: `token ${token()}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message: `Update ${job?.company || jobId} — ${newStatus}`,
+        content,
+        sha: fileSha,
+      }),
+    });
+
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.message || `HTTP ${res.status}`);
+    }
+
+    const result = await res.json();
+    fileSha = result.content.sha;
+    toast(`Saved — ${job?.company} marked "${newStatus}"`, 'success');
+  } catch(e) {
+    toast(`Save failed: ${e.message}`, 'error');
+    await loadData(); // Reset to server state
+  } finally {
+    select.classList.remove('saving');
+    select.disabled = false;
+  }
+}
+
+// ── Job modal ──────────────────────────────────────────────────────────────
+function openJobModal(jobId) {
+  const job = [...state.jobs, ...state.archive].find(j => j.id === jobId);
+  if (!job) return;
+
+  document.getElementById('modal-title').textContent = job.title;
+  document.getElementById('modal-company').textContent = job.company;
+
+  const hasCL = !!job.cover_letter;
+  const hasNotes = !!job.notes;
+
+  const tabsEl = document.getElementById('modal-tabs');
+  const bodyEl = document.getElementById('modal-body');
+
+  if (hasCL && hasNotes) {
+    tabsEl.innerHTML = `
+      <button class="modal-tab-btn active" id="mtab-cl" onclick="showModalTab('cl',${jobId})">Cover Letter</button>
+      <button class="modal-tab-btn" id="mtab-notes" onclick="showModalTab('notes',${jobId})">Notes</button>
+    `;
+    tabsEl.style.display = 'flex';
+    bodyEl.innerHTML = `<p>${esc(job.cover_letter)}</p>`;
+  } else if (hasCL) {
+    tabsEl.style.display = 'none';
+    tabsEl.innerHTML = '';
+    bodyEl.innerHTML = `<p>${esc(job.cover_letter)}</p>`;
+  } else {
+    tabsEl.style.display = 'none';
+    tabsEl.innerHTML = '';
+    bodyEl.innerHTML = `<p class="notes-text">${esc(job.notes)}</p>`;
+  }
+
+  openModal('job-modal');
+}
+
+function showModalTab(tab, jobId) {
+  const job = [...state.jobs, ...state.archive].find(j => j.id === jobId);
+  if (!job) return;
+  document.querySelectorAll('.modal-tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(`mtab-${tab}`).classList.add('active');
+  const bodyEl = document.getElementById('modal-body');
+  if (tab === 'cl') {
+    bodyEl.innerHTML = `<p>${esc(job.cover_letter)}</p>`;
+  } else {
+    bodyEl.innerHTML = `<p class="notes-text">${esc(job.notes)}</p>`;
+  }
+}
+
+// ── Token modal ──────────────────────────────────────────────────────────
+function openTokenModal() {
+  const t = token();
+  const input = document.getElementById('token-input');
+  input.value = t ? '••••••••••••••••' : '';
+  const statusEl = document.getElementById('token-status');
+  statusEl.textContent = t ? '✓ Token is set' : '';
+  openModal('token-modal');
+}
+
+function saveToken() {
+  const val = document.getElementById('token-input').value.trim();
+  if (!val || val.startsWith('•')) { toast('No change', ''); return; }
+  localStorage.setItem('gh_token', val);
+  document.getElementById('token-status').textContent = '✓ Saved';
+  refreshSha();
+  toast('Token saved', 'success');
+  setTimeout(() => closeModal('token-modal'), 800);
+}
+
+function clearToken() {
+  localStorage.removeItem('gh_token');
+  document.getElementById('token-input').value = '';
+  document.getElementById('token-status').textContent = '';
+  fileSha = null;
+  toast('Token cleared', '');
+}
+
+// ── Modal helpers ──────────────────────────────────────────────────────────
+function openModal(id) {
+  const el = document.getElementById(id);
+  el.style.display = 'flex';
+  requestAnimationFrame(() => el.classList.add('open'));
+}
+function closeModal(id) {
+  const el = document.getElementById(id);
+  el.classList.remove('open');
+  setTimeout(() => { el.style.display = 'none'; }, 200);
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-backdrop.open').forEach(m => closeModal(m.id));
+  }
+});
+
+// ── Tab switch ────────────────────────────────────────────────────────────
+function switchTab(name) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+  document.getElementById('tab-' + name).classList.add('active');
+  document.getElementById('content-' + name).classList.add('active');
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>
