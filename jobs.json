@@ -1,5 +1,34 @@
 {
-  "jobs": [],
+  "jobs": [
+    {
+      "id": 111,
+      "date_found": "2026-06-07",
+      "title": "Head of Product",
+      "company": "SAP Taulia",
+      "location": "United States (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4419622556/",
+      "fit": "Moderate",
+      "recommendation": "US-Remote location test — German parent (SAP), global supply chain finance, no explicit US work-auth language. SAP has Norway office so Oslo-hire is plausible. Test: will they entertain Oslo-based candidate?",
+      "notes": "[US-Remote test 2026-06-07] SAP Taulia = SAP subsidiary, 2M+ businesses, 150+ countries, supply chain finance (Payables, Receivables, Virtual Cards). No 'must be authorized to work in US' language in JD. SAP Norway entity exists = could employ Oslo-based. Domain gap: requires fintech/trade finance + SAP ecosystem expertise. Apply to test location openness.",
+      "apply_by": "",
+      "cover_letter": "Trade finance has a version of the \"boring infrastructure\" problem that makes it more interesting than it looks. Taulia processes real cash flow between some of the world's largest buyers and their supplier networks — the moment a payable moves is actually a decision point, and the question is how much intelligence you can embed at that moment. Most working capital platforms optimise the transaction; Taulia has the position to optimise the relationship.\n\nAt Gelato, I built a global manufacturing platform connecting buyers and suppliers at scale across 130+ production partners in 34 countries — which sounds different but shares the core challenge: designing product that works at the intersection of financial flows, operational constraints, and multi-party trust. The GelatoConnect AI Estimator went from $0 to $2M+ ARR in 6 months by embedding intelligence at exactly the right friction point in the quoting workflow. Before product, eleven years at Schlumberger running operations across 15 countries gave me a ground-level education in how multi-national supply chains actually behave when regulatory environments shift.\n\nHow are you thinking about the role of AI in early payment decisions — specifically whether the system should recommend or decide, and who owns that liability conversation with large enterprise buyers? Happy to connect."
+    },
+    {
+      "id": 112,
+      "date_found": "2026-06-07",
+      "title": "VP, Product Management - Core Platform Foundations",
+      "company": "Genesys",
+      "location": "United States (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4424467691/",
+      "fit": "Moderate",
+      "recommendation": "US-Remote location test — 6000-person global enterprise CX/AI SaaS, EU offices (Dublin/London/Amsterdam), no explicit US work-auth language. Core Platform role parallels GelatoConnect API/platform work. Test: will they entertain Oslo-based candidate?",
+      "notes": "[US-Remote test 2026-06-07] Genesys Cloud = AI-powered CX platform, 8000+ enterprise customers globally. EU offices confirmed. No 'authorized to work in US' language in JD. Role owns access control, identity, admin, automation primitives — parallels Gelato platform architecture. Requires 15+ yrs enterprise SaaS + 10+ yrs leading PMs (may be a stretch). Apply to test location openness.",
+      "apply_by": "",
+      "cover_letter": "Platform foundations are the product most people never think about — until something breaks, or until they become the thing that lets every other team move faster than the competition. At Genesys, getting access control, identity, and automation primitives right isn't a back-office problem; it's what determines whether an AI orchestration layer can actually be trusted at enterprise scale.\n\nAt Gelato, I owned the GelatoConnect platform end-to-end — an API-first system connecting 14M+ customers to 130+ manufacturing partners globally. The hardest product problems weren't the AI features; they were the foundational ones: how do you design an API surface that scales across hundreds of partner integrations without becoming a maintenance tax? How do you build administration primitives that give enterprise customers control without breaking the automation that makes the platform valuable? GelatoConnect went from a fragmented partner ecosystem to a platform that cut quote time from 30-60 minutes to 15 seconds — and the foundation made that possible.\n\nAs you evolve from reactive administration to AI-assisted experiences, how are you thinking about the boundary between what the platform decides autonomously and what it surfaces to admins — especially in regulated industries like healthcare and financial services? Happy to connect."
+    }
+  ],
   "archive": [
     {
       "id": 1,
