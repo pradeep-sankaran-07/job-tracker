@@ -1,5 +1,34 @@
 {
-  "jobs": [],
+  "jobs": [
+    {
+      "id": 115,
+      "date_found": "2026-06-13",
+      "title": "Director of Product Management",
+      "company": "Halliburton",
+      "location": "Oslo, Norway (On-site)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4426934673/",
+      "fit": "Strong",
+      "recommendation": "Apply. Oslo on-site, Director of Product Management level, Halliburton Landmark division (energy software). Exceptional domain fit — Pradeep's 11 years at Schlumberger maps directly. Cloud/IT/OT roadmap role for digital solutions. Posted 1 day ago, 25 applicants.",
+      "notes": "[Saved 2026-06-13] Halliburton Landmark = oil & gas digital/software division. Role covers cloud, infrastructure, IT/OT innovation. Perfect domain fit given Schlumberger background. Active listing confirmed.",
+      "apply_by": "",
+      "cover_letter": "Landmark sits at an inflection I know from the inside. Eleven years at Schlumberger across fifteen countries — drilling, completions, field environments where software failure is not an inconvenience — taught me exactly how energy operators adopt new technology: slowly, with deep skepticism, and only when reliability is proven before capability is added. The move to cloud-native and AI-driven workflows in this industry is real, but the sequencing has to respect that constraint in a way that pure-play SaaS rarely does.\n\nAt Gelato I built the other side of that muscle: moving fast, shipping the AI Estimator from $0 to $2M+ ARR in six months, cutting quote time from 30–60 minutes to 15 seconds, and removing 65% of the manual effort from the print production sales loop. Distributed product teams, platform-first architecture, cross-functional alignment at scale — that is the recent chapter. But the Schlumberger years are what make this role specific rather than just senior.\n\nHow does Landmark sequence the cloud migration against the AI investment? There is a real tension between rebuilding the infrastructure layer and adding net-new capabilities on top — and getting the order wrong costs years. That is the kind of hard that I find interesting.\n\nHappy to connect."
+    },
+    {
+      "id": 116,
+      "date_found": "2026-06-13",
+      "title": "Program Director, Kahoot at Work",
+      "company": "Kahoot!",
+      "location": "Oslo, Norway (On-site)",
+      "status": "Will not apply",
+      "source": "https://www.linkedin.com/jobs/view/4425096584/",
+      "fit": "Weak",
+      "recommendation": "Do not apply",
+      "notes": "[Saved 2026-06-13 — reviewed, won't apply] Wrong function: Program Director is a GTM/commercial/spokesperson role for Kahoot 360 (L&D product), not product management leadership. Responsibilities include industry events, media representation, and narrative shaping — not product strategy or roadmap ownership.",
+      "apply_by": "",
+      "cover_letter": ""
+    }
+  ],
   "archive": [
     {
       "id": 1,
