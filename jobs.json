@@ -1,20 +1,5 @@
 {
-  "jobs": [
-    {
-      "id": 119,
-      "date_found": "2026-06-19",
-      "title": "Chief Agentic Officer",
-      "company": "Sopra Steria",
-      "location": "Oslo, Norway (On-site)",
-      "status": "Will not apply",
-      "source": "https://www.linkedin.com/jobs/view/4430462976/",
-      "fit": "Weak",
-      "recommendation": "Skip — wrong job function",
-      "notes": "[Saved 2026-06-19 — reviewed, won't apply] Consulting/service delivery role: building Sopra Steria's agentic AI consulting practice and leading client engagements — not a product management role. Sopra Steria is a large IT consultancy, not a tech product company. Application deadline July 27, 2026.",
-      "apply_by": "2026-07-27",
-      "cover_letter": ""
-    }
-  ],
+  "jobs": [],
   "archive": [
     {
       "id": 1,
@@ -1708,6 +1693,20 @@
       "recommendation": "Skip",
       "notes": "[Saved 2026-06-15 — reviewed, won't apply] Stockholm on-site, not Oslo. On-site outside Norway is a non-starter per location filters.",
       "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 119,
+      "date_found": "2026-06-19",
+      "title": "Chief Agentic Officer",
+      "company": "Sopra Steria",
+      "location": "Oslo, Norway (On-site)",
+      "status": "Will not apply",
+      "source": "https://www.linkedin.com/jobs/view/4430462976/",
+      "fit": "Weak",
+      "recommendation": "Skip — wrong job function",
+      "notes": "[Saved 2026-06-19 — reviewed, won't apply] Consulting/service delivery role: building Sopra Steria's agentic AI consulting practice and leading client engagements — not a product management role. Sopra Steria is a large IT consultancy, not a tech product company. Application deadline July 27, 2026.",
+      "apply_by": "2026-07-27",
       "cover_letter": ""
     }
   ]
