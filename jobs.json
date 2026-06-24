@@ -1,5 +1,34 @@
 {
-  "jobs": [],
+  "jobs": [
+    {
+      "id": 120,
+      "date_found": "2026-06-24",
+      "title": "Head/Director of Product (AI Insights & Automation)",
+      "company": "Mimica",
+      "location": "European Union (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4432430302/",
+      "fit": "Strong",
+      "recommendation": "Apply — right level (Head/Director), strong AI product fit (enterprise SaaS automation), EU remote, scale-up. GelatoConnect AI Estimator directly parallels Mimica's process automation product. Posted 12 hours ago.",
+      "notes": "London-based AI process intelligence startup. Role is fully remote EU/NA timezone. Requires: Head/Director/VP level scale-up experience, AI/ML product experience, enterprise SaaS. Pradeep's AI Estimator ($0→$2M ARR, 30-60min→15sec) is a direct parallel. Also posted as job 4432441165 (Ireland Remote listing).",
+      "apply_by": "",
+      "cover_letter": "Most process intelligence tools show you what's happening but leave you to decide what to do about it. The more interesting version of this category — the one Mimica is building — closes that gap: learn from human behavior, surface the insight, and then automate the repetition. That's a fundamentally harder product problem, and it's the right one to be solving.\n\nAt Gelato, I faced a version of this exact challenge: a complex, expert-dependent pricing workflow that took 30–60 minutes per job and blocked growth. I rebuilt it as the GelatoConnect AI Estimator — deploying a model that captured the logic embedded in expert decisions and delivered quotes in 15 seconds. $0 to $2M ARR in six months, 65% reduction in manual effort. The AI didn't replace judgment; it extracted and operationalized it.\n\nI'm curious how Mimica thinks about the boundary between assisted automation and fully autonomous execution — that's where the product roadmap gets interesting.\n\nHappy to connect."
+    },
+    {
+      "id": 121,
+      "date_found": "2026-06-24",
+      "title": "Head of Product – Marketplace Intelligence",
+      "company": "refurbed",
+      "location": "European Union (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4432240951/",
+      "fit": "Moderate",
+      "recommendation": "Consider — EU-wide remote, right level, marketplace platform overlap with Gelato. AI/ML capability requirement aligns with Pradeep's AI Estimator experience. But role skews toward growth/marketplace performance rather than pure product leadership.",
+      "notes": "Vienna-based circular economy marketplace (refurbished electronics). Series B (€54M, 2021). Role is genuinely EU-wide remote (open to all Europe + UK). Manages PMs + SEO manager. Focus: user acquisition, pricing, monetization, marketplace intelligence. Marketplace dynamics overlap with Gelato platform experience.",
+      "apply_by": "",
+      "cover_letter": ""
+    }
+  ],
   "archive": [
     {
       "id": 1,
