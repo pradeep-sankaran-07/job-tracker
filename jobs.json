@@ -27,6 +27,34 @@
       "notes": "What they sell: Diebold Nixdorf sells banking (ATM) and retail (POS / self-checkout) technology and software. This role is on the software side: cloud-native retail commerce platform, cloud/edge POS, AI computer vision for item recognition and fraud, loyalty/offers - not the physical hardware.\nFunding: Public company (NYSE: DBD). Emerged from a Chapter 11 restructuring in Aug 2023; now owned by former creditors and institutional holders. Revenue ~$3.5B.\nInvestors: Public shareholders post-restructuring (institutional holders); no venture backing.\nTeam size: ~21,000 employees globally - a large mature corporate, not a scale-up.\nRole: Head of Product Management for the cloud/AI retail commerce platform - owns product strategy for cloud POS, connected commerce and computer-vision capabilities.\nSource: Live-checked 2026-07-20 (posted 6 days ago, 52 applicants, no expiry banner). LinkedIn tags it Poland (Remote); posting itself does not spell out remote, so verify the arrangement.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 132,
+      "date_found": "2026-07-20",
+      "title": "Vice President of Product - Digital Platform",
+      "company": "Safeguard Global",
+      "location": "Remote (Spain / Europe, EU timezone)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4423563128/",
+      "fit": "Strong",
+      "recommendation": "Apply - strong fit: VP-level, reports to CPO, owns 10 teams, global platform, remote EU. Verify Norway-based remote eligibility.",
+      "notes": "What they sell: Employer of Record (EOR) and global workforce/HR services, letting companies hire, onboard, pay and stay compliant with staff in 170+ countries. Buyers are companies expanding across borders. HQ Austin, Texas.\nFunding: ~$213M raised across 4 rounds; PE-backed. Note: the payroll division was sold to Deel in March 2025, so this role sits with the remaining EOR/workforce platform business.\nInvestors: MMC Ventures (lead) and Accel-KKR (private equity, minority stake since 2019).\nTeam size: ~1,594 employees (pre-payroll-divestiture figure).\nRole: Owns delivery and outcomes across 10 product teams from discovery to value realisation, reports to the CPO, partners with Product Directors, Design and Engineering. Base ~EUR 160k (Spain market band). Remote-first, global.\nSource: LinkedIn, verified live this run (posted ~2 days ago, 200+ applicants).",
+      "apply_by": "",
+      "cover_letter": "Safeguard Global's product has to make hiring and paying people in more than 170 countries feel simple, which is one of the harder surfaces in B2B software, because every country brings its own rules. Owning ten product teams from discovery through to value across that surface is exactly the scale I have worked at.\n\nAt Gelato I was SVP Product for a global manufacturing platform spanning over 100 countries, so I have lived the problem of one platform meeting very different local realities. I built the GelatoConnect AI Estimator from zero to over 2M dollars ARR in six months and cut quote time from 30-60 minutes to 15 seconds, and I lead distributed product teams on API-first, platform patterns.\n\nI would want to understand how Safeguard thinks about where AI can take the most manual, compliance-heavy work out of global employment. Happy to connect."
+    },
+    {
+      "id": 133,
+      "date_found": "2026-07-20",
+      "title": "Director, Product Management - Digital AI Engagement",
+      "company": "Genesys",
+      "location": "Ireland / Drammen, Norway (Hybrid)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4439861907/",
+      "fit": "Moderate",
+      "recommendation": "Consider - large enterprise, but has a Drammen (Norway) office and hybrid flexibility, AI product focus. Verify whether the role can be based in Norway before applying.",
+      "notes": "What they sell: Cloud contact-center software (CCaaS) - the Genesys Cloud platform that enterprises use to run customer service across voice, chat, email and messaging, increasingly AI-powered. HQ Daly City, California; founded 1990.\nFunding: Private (PE-owned). Backed by Permira and TCV, with later investment from Salesforce Ventures, ServiceNow and others; valued around $21B at its 2021 raise.\nInvestors: Permira, TCV, Salesforce Ventures, ServiceNow, BlackRock.\nTeam size: Large enterprise, roughly 6,000+ employees across ~70 locations globally.\nRole: Owns AI-powered asynchronous engagement strategy across Genesys Cloud (messaging, email, proactive engagement), partners with platform/engineering teams, builds and coaches a PM team. Posting references Drammen (Norway) and Galway offices, hybrid with WFH flexibility.\nSource: LinkedIn, verified live this run (posted ~6 days ago, 49 applicants). Location eligibility for a Norway-based hire should be confirmed.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
