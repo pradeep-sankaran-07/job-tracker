@@ -1,5 +1,20 @@
 {
-  "jobs": [],
+  "jobs": [
+    {
+      "id": 134,
+      "date_found": "2026-07-22",
+      "title": "Director, Product Management",
+      "company": "Afiniti",
+      "location": "Ireland (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4438722530/",
+      "fit": "Moderate",
+      "recommendation": "Consider - Director level, remote EU, agentic AI product ownership fits the AI Estimator background. Weigh the 2024 restructuring / liquidation history first.",
+      "notes": "[MODERATE] Caution: company went through restructuring / provisional liquidation (Sept 2024) and debt reorganisation; new CEO Feb 2025. Still operating and shipping, but check financial stability before applying.\nWhat they sell: AI for contact centres - pairs customers with agents in real time based on predicted interaction quality; serves telecom, banking, insurance, healthcare and travel.\nFunding: ~$430M raised total; unicorn (peak ~$1.6B valuation). Entered restructuring in 2024.\nInvestors: unknown (historically large PE / strategic backers).\nTeam size: ~1,150 employees (May 2026).\nRole: Director, Product Management - owns one or more agentic AI products (customer-facing AI agents across voice, chat and email). Reports to Head of Product. Remote Ireland. Salary EUR 128K-213K + 20% bonus.\nSource: LinkedIn posting live 2026-07-22 (97 applicants, posted 5 days ago). | [Re-saved 2026-07-25 — previously Applied (Afiniti, still LIVE with Apply button); reconsider only if not yet submitted] | [Corrected 2026-07-26 — status was wrongly 'Applied'; Pradeep never saw/applied. Moved back to active as New. Listing verified LIVE this run.]",
+      "apply_by": "",
+      "cover_letter": ""
+    }
+  ],
   "archive": [
     {
       "id": 1,
@@ -1874,20 +1889,6 @@
       "fit": "Moderate",
       "recommendation": "Consider with caveats — title and domain fit (Head of Product for a cloud/AI retail software platform, remote EU), but Diebold Nixdorf is a large legacy enterprise rather than the funded scale-up the profile targets. Confirm the role is software-only and truly remote before investing time.",
       "notes": "What they sell: Diebold Nixdorf sells banking (ATM) and retail (POS / self-checkout) technology and software. This role is on the software side: cloud-native retail commerce platform, cloud/edge POS, AI computer vision for item recognition and fraud, loyalty/offers - not the physical hardware.\nFunding: Public company (NYSE: DBD). Emerged from a Chapter 11 restructuring in Aug 2023; now owned by former creditors and institutional holders. Revenue ~$3.5B.\nInvestors: Public shareholders post-restructuring (institutional holders); no venture backing.\nTeam size: ~21,000 employees globally - a large mature corporate, not a scale-up.\nRole: Head of Product Management for the cloud/AI retail commerce platform - owns product strategy for cloud POS, connected commerce and computer-vision capabilities.\nSource: Live-checked 2026-07-20 (posted 6 days ago, 52 applicants, no expiry banner). LinkedIn tags it Poland (Remote); posting itself does not spell out remote, so verify the arrangement.",
-      "apply_by": "",
-      "cover_letter": ""
-    },
-    {
-      "id": 134,
-      "date_found": "2026-07-22",
-      "title": "Director, Product Management",
-      "company": "Afiniti",
-      "location": "Ireland (Remote)",
-      "status": "Applied",
-      "source": "https://www.linkedin.com/jobs/view/4438722530/",
-      "fit": "Moderate",
-      "recommendation": "Consider - Director level, remote EU, agentic AI product ownership fits the AI Estimator background. Weigh the 2024 restructuring / liquidation history first.",
-      "notes": "[MODERATE] Caution: company went through restructuring / provisional liquidation (Sept 2024) and debt reorganisation; new CEO Feb 2025. Still operating and shipping, but check financial stability before applying.\nWhat they sell: AI for contact centres - pairs customers with agents in real time based on predicted interaction quality; serves telecom, banking, insurance, healthcare and travel.\nFunding: ~$430M raised total; unicorn (peak ~$1.6B valuation). Entered restructuring in 2024.\nInvestors: unknown (historically large PE / strategic backers).\nTeam size: ~1,150 employees (May 2026).\nRole: Director, Product Management - owns one or more agentic AI products (customer-facing AI agents across voice, chat and email). Reports to Head of Product. Remote Ireland. Salary EUR 128K-213K + 20% bonus.\nSource: LinkedIn posting live 2026-07-22 (97 applicants, posted 5 days ago). | [Re-saved 2026-07-25 — previously Applied (Afiniti, still LIVE with Apply button); reconsider only if not yet submitted]",
       "apply_by": "",
       "cover_letter": ""
     },
