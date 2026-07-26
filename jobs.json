@@ -1,62 +1,5 @@
 {
-  "jobs": [
-    {
-      "id": 132,
-      "date_found": "2026-07-20",
-      "title": "Vice President of Product - Digital Platform",
-      "company": "Safeguard Global",
-      "location": "Remote (Spain / Europe, EU timezone)",
-      "status": "Applied",
-      "source": "https://www.linkedin.com/jobs/view/4423563128/",
-      "fit": "Strong",
-      "recommendation": "Apply - strong fit: VP-level, reports to CPO, owns 10 teams, global platform, remote EU. Verify Norway-based remote eligibility.",
-      "notes": "What they sell: Employer of Record (EOR) and global workforce/HR services, letting companies hire, onboard, pay and stay compliant with staff in 170+ countries. Buyers are companies expanding across borders. HQ Austin, Texas.\nFunding: ~$213M raised across 4 rounds; PE-backed. Note: the payroll division was sold to Deel in March 2025, so this role sits with the remaining EOR/workforce platform business.\nInvestors: MMC Ventures (lead) and Accel-KKR (private equity, minority stake since 2019).\nTeam size: ~1,594 employees (pre-payroll-divestiture figure).\nRole: Owns delivery and outcomes across 10 product teams from discovery to value realisation, reports to the CPO, partners with Product Directors, Design and Engineering. Base ~EUR 160k (Spain market band). Remote-first, global.\nSource: LinkedIn, verified live this run (posted ~2 days ago, 200+ applicants). | [Re-saved 2026-07-22 - already tracked, no action]",
-      "apply_by": "",
-      "cover_letter": "Safeguard Global's product has to make hiring and paying people in more than 170 countries feel simple, which is one of the harder surfaces in B2B software, because every country brings its own rules. Owning ten product teams from discovery through to value across that surface is exactly the scale I have worked at.\n\nAt Gelato I was SVP Product for a global manufacturing platform spanning over 100 countries, so I have lived the problem of one platform meeting very different local realities. I built the GelatoConnect AI Estimator from zero to over 2M dollars ARR in six months and cut quote time from 30-60 minutes to 15 seconds, and I lead distributed product teams on API-first, platform patterns.\n\nI would want to understand how Safeguard thinks about where AI can take the most manual, compliance-heavy work out of global employment. Happy to connect."
-    },
-    {
-      "id": 133,
-      "date_found": "2026-07-20",
-      "title": "Director, Product Management - Digital AI Engagement",
-      "company": "Genesys",
-      "location": "Ireland / Drammen, Norway (Hybrid)",
-      "status": "Will not apply",
-      "source": "https://www.linkedin.com/jobs/view/4439861907/",
-      "fit": "Moderate",
-      "recommendation": "Consider - large enterprise, but has a Drammen (Norway) office and hybrid flexibility, AI product focus. Verify whether the role can be based in Norway before applying.",
-      "notes": "What they sell: Cloud contact-center software (CCaaS) - the Genesys Cloud platform that enterprises use to run customer service across voice, chat, email and messaging, increasingly AI-powered. HQ Daly City, California; founded 1990.\nFunding: Private (PE-owned). Backed by Permira and TCV, with later investment from Salesforce Ventures, ServiceNow and others; valued around $21B at its 2021 raise.\nInvestors: Permira, TCV, Salesforce Ventures, ServiceNow, BlackRock.\nTeam size: Large enterprise, roughly 6,000+ employees across ~70 locations globally.\nRole: Owns AI-powered asynchronous engagement strategy across Genesys Cloud (messaging, email, proactive engagement), partners with platform/engineering teams, builds and coaches a PM team. Posting references Drammen (Norway) and Galway offices, hybrid with WFH flexibility.\nSource: LinkedIn, verified live this run (posted ~6 days ago, 49 applicants). Location eligibility for a Norway-based hire should be confirmed.",
-      "apply_by": "",
-      "cover_letter": ""
-    },
-    {
-      "id": 136,
-      "date_found": "2026-07-23",
-      "title": "Vice President of Product – Digital Platform",
-      "company": "Safeguard Global",
-      "location": "Spain (Remote)",
-      "status": "Applied",
-      "source": "https://www.linkedin.com/jobs/view/4423563128/",
-      "fit": "Strong",
-      "recommendation": "Apply. VP-level product role owning the digital platform at a global EOR/payroll company; fully remote, EU timezone fits. Strong parallel to turning Gelato's global operation into a software platform. Verify remote is pan-EU (not Spain-only) before applying.",
-      "notes": "[Saved 2026-07-23]\nWhat they sell: Global workforce platform - Employer of Record, global payroll, entity setup and contractor management across 187 countries, sold to companies hiring internationally without setting up a local entity.\nFunding: PE-backed growth equity; 4 funding rounds since founding in 2008.\nInvestors: Accel-KKR (lead growth equity), MMC Ventures, Adfisco.\nTeam size: Large - 400+ in-country payroll/EOR specialists; total headcount estimated ~1,500-2,000.\nRole: VP of Product - Digital Platform. Owns product vision, strategy and roadmap for the digital platform. Fully remote.\nSource: Live-checked 2026-07-23 on LinkedIn, Apply button active, reposted 4 days ago, 100+ clicked apply. Location tagged 'Spain (Remote)' - confirm whether remote is pan-EU or Spain-only before applying (Oslo/EU timezone should fit a globally distributed workforce company).",
-      "apply_by": "",
-      "cover_letter": "Safeguard Global pioneered the EOR model back in 2010, but the market has changed underneath it. Newer, software-first competitors have made self-serve the expectation, while your real edge is still 400+ in-country experts across 187 countries. The Digital Platform role is really about turning that deep operational and human expertise into software that scales without losing the local knowledge. That is the exact problem I have spent the last few years on.\n\nAt Gelato I helped turn a global manufacturing operation into a product platform. I built GelatoConnect's AI Estimator, which went from zero to over $2M ARR in six months, cut manual quoting effort by 65%, and dropped quote time from 30-60 minutes to 15 seconds. Before that, 11 years at Schlumberger across 15 countries taught me how high-reliability operations actually run in the field.\n\nI am curious how you see the balance between your in-country expert network and a self-serve platform as AI takes on more of the compliance and payroll work. Happy to connect."
-    },
-    {
-      "id": 137,
-      "date_found": "2026-07-23",
-      "title": "Director, Product Management – Digital AI Engagement",
-      "company": "Genesys",
-      "location": "Ireland (Remote)",
-      "status": "Will not apply",
-      "source": "https://www.linkedin.com/jobs/view/4439861907/",
-      "fit": "Moderate",
-      "recommendation": "Consider. Director-level product role in AI/digital customer engagement at a large CX software company; fully remote, EU timezone. One notch below Pradeep's current SVP title but at a much bigger company. Apply if a large-enterprise AI product role appeals.",
-      "notes": "[Saved 2026-07-23]\nWhat they sell: Cloud customer experience and contact-centre software (Genesys Cloud) with AI-powered customer and employee engagement, sold to enterprises for customer service.\nFunding: PE-owned; took investment from Salesforce Ventures, ServiceNow and BlackRock in 2021 at roughly $21B valuation. Late-stage, pre-IPO.\nInvestors: Permira, Hellman & Friedman, Salesforce Ventures, ServiceNow, BlackRock.\nTeam size: ~6,000-8,000 employees.\nRole: Director, Product Management - Digital AI Engagement. Owns product for digital/AI customer engagement. Fully remote, Ireland-based req.\nSource: Live-checked 2026-07-23 on LinkedIn, Apply button active, posted 1 week ago, 58 clicked apply. Right domain (AI product), remote EU fits; Director title is a step below current level.",
-      "apply_by": "",
-      "cover_letter": ""
-    }
-  ],
+  "jobs": [],
   "archive": [
     {
       "id": 1,
@@ -1384,7 +1327,7 @@
       "source": "https://www.linkedin.com/jobs/view/4416509350/",
       "fit": "Weak",
       "recommendation": "Will not apply",
-      "notes": "[Saved 2026-05-26 — reviewed, won't apply] COO is operations, not product leadership. Jobgether also previously identified as a recruiter aggregator posting generic remote-EU roles (see SVP role at ID 87). Outside the target profile (VP/Head Product/CPO). | [Re-saved 2026-05-27 — previously Will not apply; reconsider?] | [Re-saved 2026-06-07 — previously Will not apply; reconsider?] | [Re-saved 2026-06-08 — previously Will not apply; reconsider?] | [Re-saved 2026-06-09 — previously Will not apply; reconsider?] | [Re-saved 2026-06-10 — previously Will not apply; reconsider?] | [Re-saved 2026-06-13 — previously Will not apply; reconsider?] | [Re-saved 2026-06-29 — previously Will not apply; reconsider?] | [Re-saved 2026-07-03 — previously Will not apply; reconsider?] | [Re-saved 2026-07-20 — previously Will not apply; reconsider?]",
+      "notes": "[Saved 2026-05-26 — reviewed, won't apply] COO is operations, not product leadership. Jobgether also previously identified as a recruiter aggregator posting generic remote-EU roles (see SVP role at ID 87). Outside the target profile (VP/Head Product/CPO). | [Re-saved 2026-05-27 — previously Will not apply; reconsider?] | [Re-saved 2026-06-07 — previously Will not apply; reconsider?] | [Re-saved 2026-06-08 — previously Will not apply; reconsider?] | [Re-saved 2026-06-09 — previously Will not apply; reconsider?] | [Re-saved 2026-06-10 — previously Will not apply; reconsider?] | [Re-saved 2026-06-13 — previously Will not apply; reconsider?] | [Re-saved 2026-06-29 — previously Will not apply; reconsider?] | [Re-saved 2026-07-03 — previously Will not apply; reconsider?] | [Re-saved 2026-07-20 — previously Will not apply; reconsider?] | [Re-saved 2026-07-25 — previously Will not apply (COO, not product); reconsider?]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1398,7 +1341,7 @@
       "source": "https://www.linkedin.com/jobs/view/4417482992/",
       "fit": "Moderate",
       "recommendation": "Already applied via LinkedIn 18h ago. Recruiter for stealth Series A AI startup, custom ops agents for enterprise (insurance/marketplaces/healthcare). £170-200k base. London hybrid - outside Oslo, normally would exclude, but applied.",
-      "notes": "[Saved 2026-05-27] LinkedIn shows Applied. Hidden client - well-funded Series A AI startup. 10+ yrs PM + AI/B2B scaling $10M-$100M ARR requirement. | [Re-saved 2026-06-07 — previously Applied; reconsider?] | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?]",
+      "notes": "[Saved 2026-05-27] LinkedIn shows Applied. Hidden client - well-funded Series A AI startup. 10+ yrs PM + AI/B2B scaling $10M-$100M ARR requirement. | [Re-saved 2026-06-07 — previously Applied; reconsider?] | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?] | [Re-saved 2026-07-25 — previously Applied; no action]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1510,7 +1453,7 @@
       "source": "https://www.linkedin.com/jobs/view/4417616583/",
       "fit": "Moderate",
       "recommendation": "Apply if open to telecoms/connectivity domain; Oslo-adjacent location (Drammen) is a plus",
-      "notes": "[Saved 2026-06-02] Digital infrastructure/telco connectivity platform. VP level, EU remote, Drammen (near Oslo). Domain is telecoms/network connectivity which is a stretch from SaaS background. 108 applicants already. | [Re-saved 2026-06-04 — already tracked, no action] | [Re-saved 2026-06-07 — previously Applied; reconsider?] | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?]",
+      "notes": "[Saved 2026-06-02] Digital infrastructure/telco connectivity platform. VP level, EU remote, Drammen (near Oslo). Domain is telecoms/network connectivity which is a stretch from SaaS background. 108 applicants already. | [Re-saved 2026-06-04 — already tracked, no action] | [Re-saved 2026-06-07 — previously Applied; reconsider?] | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?] | [Re-saved 2026-07-25 — previously Applied; listing now EXPIRED, no action]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1608,7 +1551,7 @@
       "source": "https://www.linkedin.com/jobs/view/4424163876/",
       "fit": "Weak",
       "recommendation": "Will not apply — staffing agency (executive search firm); actual employer unknown",
-      "notes": "[Saved 2026-06-07 — reviewed, staffing agency] Mackinnon Bruce International is an executive search firm; this posting is on behalf of an undisclosed client. Hard filter: staffing agencies. LinkedIn shows Application submitted 2 days ago — tracked retroactively as Applied. | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?]",
+      "notes": "[Saved 2026-06-07 — reviewed, staffing agency] Mackinnon Bruce International is an executive search firm; this posting is on behalf of an undisclosed client. Hard filter: staffing agencies. LinkedIn shows Application submitted 2 days ago — tracked retroactively as Applied. | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?] | [Re-saved 2026-07-25 — previously Applied; staffing agency listing, no action]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1622,7 +1565,7 @@
       "source": "https://www.linkedin.com/jobs/view/4414348309/",
       "fit": "Moderate",
       "recommendation": "Applied — EU Remote VP Product at B2B SaaS supply chain/electronics manufacturing quoting platform",
-      "notes": "[Saved 2026-06-07] B2B SaaS, electronics manufacturing supply chain quoting software. VP Product, EU Remote. LinkedIn shows Application submitted 2 days ago — tracked retroactively as Applied. Relevant: manufacturing domain aligns with Gelato + Schlumberger background. | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?]",
+      "notes": "[Saved 2026-06-07] B2B SaaS, electronics manufacturing supply chain quoting software. VP Product, EU Remote. LinkedIn shows Application submitted 2 days ago — tracked retroactively as Applied. Relevant: manufacturing domain aligns with Gelato + Schlumberger background. | [Re-saved 2026-06-08 — previously Applied; reconsider?] | [Re-saved 2026-06-09 — previously Applied; reconsider?] | [Re-saved 2026-06-10 — previously Applied; reconsider?] | [Re-saved 2026-06-13 — previously Applied; reconsider?] | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?] | [Re-saved 2026-07-25 — previously Applied; listing now EXPIRED, no action]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1636,7 +1579,7 @@
       "source": "https://www.linkedin.com/jobs/view/4423394316/",
       "fit": "Weak",
       "recommendation": "Will not apply — contract/fractional role; also staffing agency",
-      "notes": "[Saved 2026-06-07 — reviewed, won't apply] Fractional/contract role posted by a staffing agency. Hard filters: contract/freelance AND staffing agencies. | [Re-saved 2026-06-08 — previously Will not apply; reconsider?] | [Re-saved 2026-06-09 — previously Will not apply; reconsider?] | [Re-saved 2026-06-10 — previously Will not apply; reconsider?] | [Re-saved 2026-06-13 — previously Will not apply; reconsider?] | [Re-saved 2026-06-29 — previously Will not apply; reconsider?] | [Re-saved 2026-07-03 — previously Will not apply; reconsider?] | [Re-saved 2026-07-20 — previously Will not apply; reconsider?]",
+      "notes": "[Saved 2026-06-07 — reviewed, won't apply] Fractional/contract role posted by a staffing agency. Hard filters: contract/freelance AND staffing agencies. | [Re-saved 2026-06-08 — previously Will not apply; reconsider?] | [Re-saved 2026-06-09 — previously Will not apply; reconsider?] | [Re-saved 2026-06-10 — previously Will not apply; reconsider?] | [Re-saved 2026-06-13 — previously Will not apply; reconsider?] | [Re-saved 2026-06-29 — previously Will not apply; reconsider?] | [Re-saved 2026-07-03 — previously Will not apply; reconsider?] | [Re-saved 2026-07-20 — previously Will not apply; reconsider?] | [Re-saved 2026-07-25 — previously Will not apply (fractional/agency); reconsider?]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1650,7 +1593,7 @@
       "source": "https://www.linkedin.com/jobs/view/4414410636/",
       "fit": "Weak",
       "recommendation": "Do not apply",
-      "notes": "[Saved 2026-06-09 — listing expired] LinkedIn URL redirected to de.linkedin.com/jobs/produktberater-stellen — vacancy no longer active. | [Re-saved 2026-06-10 — previously Will not apply; reconsider?] | [Re-saved 2026-06-13 — previously Will not apply; reconsider?] | [Re-saved 2026-06-29 — previously Will not apply; reconsider?] | [Re-saved 2026-07-03 — previously Will not apply; reconsider?] | [Re-saved 2026-07-20 — previously Will not apply; reconsider?]",
+      "notes": "[Saved 2026-06-09 — listing expired] LinkedIn URL redirected to de.linkedin.com/jobs/produktberater-stellen — vacancy no longer active. | [Re-saved 2026-06-10 — previously Will not apply; reconsider?] | [Re-saved 2026-06-13 — previously Will not apply; reconsider?] | [Re-saved 2026-06-29 — previously Will not apply; reconsider?] | [Re-saved 2026-07-03 — previously Will not apply; reconsider?] | [Re-saved 2026-07-20 — previously Will not apply; reconsider?] | [Re-saved 2026-07-25 — previously Will not apply; listing now EXPIRED, no action]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1748,7 +1691,7 @@
       "source": "https://www.linkedin.com/jobs/view/4424889318/",
       "fit": "Weak",
       "recommendation": "Skip",
-      "notes": "[Saved 2026-06-15 — reviewed, won't apply] Stockholm on-site, not Oslo. On-site outside Norway is a non-starter per location filters. | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?]",
+      "notes": "[Saved 2026-06-15 — reviewed, won't apply] Stockholm on-site, not Oslo. On-site outside Norway is a non-starter per location filters. | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?] | [Re-saved 2026-07-25 — previously Applied; on-site Stockholm, no action]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1776,7 +1719,7 @@
       "source": "https://www.linkedin.com/jobs/view/4432430302/",
       "fit": "Strong",
       "recommendation": "Apply — right level (Head/Director), strong AI product fit (enterprise SaaS automation), EU remote, scale-up. GelatoConnect AI Estimator directly parallels Mimica's process automation product. Posted 12 hours ago.",
-      "notes": "London-based AI process intelligence startup. Role is fully remote EU/NA timezone. Requires: Head/Director/VP level scale-up experience, AI/ML product experience, enterprise SaaS. Pradeep's AI Estimator ($0→$2M ARR, 30-60min→15sec) is a direct parallel. Also posted as job 4432441165 (Ireland Remote listing). | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?]",
+      "notes": "London-based AI process intelligence startup. Role is fully remote EU/NA timezone. Requires: Head/Director/VP level scale-up experience, AI/ML product experience, enterprise SaaS. Pradeep's AI Estimator ($0→$2M ARR, 30-60min→15sec) is a direct parallel. Also posted as job 4432441165 (Ireland Remote listing). | [Re-saved 2026-06-29 — previously Applied; reconsider?] | [Re-saved 2026-07-03 — previously Applied; reconsider?] | [Re-saved 2026-07-20 — previously Applied; reconsider?] | [Re-saved 2026-07-25 as 'Head/VP of Product (AI Process Insights & Automation)' — previously Applied; that listing now EXPIRED, no action]",
       "apply_by": "",
       "cover_letter": "Most process intelligence tools show you what's happening but leave you to decide what to do about it. The more interesting version of this category — the one Mimica is building — closes that gap: learn from human behavior, surface the insight, and then automate the repetition. That's a fundamentally harder product problem, and it's the right one to be solving.\n\nAt Gelato, I faced a version of this exact challenge: a complex, expert-dependent pricing workflow that took 30–60 minutes per job and blocked growth. I rebuilt it as the GelatoConnect AI Estimator — deploying a model that captured the logic embedded in expert decisions and delivered quotes in 15 seconds. $0 to $2M ARR in six months, 65% reduction in manual effort. The AI didn't replace judgment; it extracted and operationalized it.\n\nI'm curious how Mimica thinks about the boundary between assisted automation and fully autonomous execution — that's where the product roadmap gets interesting.\n\nHappy to connect."
     },
@@ -1944,7 +1887,7 @@
       "source": "https://www.linkedin.com/jobs/view/4438722530/",
       "fit": "Moderate",
       "recommendation": "Consider - Director level, remote EU, agentic AI product ownership fits the AI Estimator background. Weigh the 2024 restructuring / liquidation history first.",
-      "notes": "[MODERATE] Caution: company went through restructuring / provisional liquidation (Sept 2024) and debt reorganisation; new CEO Feb 2025. Still operating and shipping, but check financial stability before applying.\nWhat they sell: AI for contact centres - pairs customers with agents in real time based on predicted interaction quality; serves telecom, banking, insurance, healthcare and travel.\nFunding: ~$430M raised total; unicorn (peak ~$1.6B valuation). Entered restructuring in 2024.\nInvestors: unknown (historically large PE / strategic backers).\nTeam size: ~1,150 employees (May 2026).\nRole: Director, Product Management - owns one or more agentic AI products (customer-facing AI agents across voice, chat and email). Reports to Head of Product. Remote Ireland. Salary EUR 128K-213K + 20% bonus.\nSource: LinkedIn posting live 2026-07-22 (97 applicants, posted 5 days ago).",
+      "notes": "[MODERATE] Caution: company went through restructuring / provisional liquidation (Sept 2024) and debt reorganisation; new CEO Feb 2025. Still operating and shipping, but check financial stability before applying.\nWhat they sell: AI for contact centres - pairs customers with agents in real time based on predicted interaction quality; serves telecom, banking, insurance, healthcare and travel.\nFunding: ~$430M raised total; unicorn (peak ~$1.6B valuation). Entered restructuring in 2024.\nInvestors: unknown (historically large PE / strategic backers).\nTeam size: ~1,150 employees (May 2026).\nRole: Director, Product Management - owns one or more agentic AI products (customer-facing AI agents across voice, chat and email). Reports to Head of Product. Remote Ireland. Salary EUR 128K-213K + 20% bonus.\nSource: LinkedIn posting live 2026-07-22 (97 applicants, posted 5 days ago). | [Re-saved 2026-07-25 — previously Applied (Afiniti, still LIVE with Apply button); reconsider only if not yet submitted]",
       "apply_by": "",
       "cover_letter": ""
     },
@@ -1959,6 +1902,62 @@
       "fit": "Weak",
       "recommendation": "Will not apply - high-risk/iGaming/crypto payments domain and Russian-fluency requirement put this outside the target profile.",
       "notes": "[Saved 2026-07-22 - reviewed, won't apply] High-risk / iGaming / crypto payments domain and requires Russian fluency - outside target profile.\nWhat they sell: Payment service provider for high-risk merchants - digital wallets, money transfers, merchant portals; iGaming, PSP, high-risk and crypto payment processing.\nFunding: unknown.\nInvestors: unknown.\nTeam size: role would manage 15+ Product Managers; total org size unknown.\nRole: Chief Product Officer - owns product strategy across geographic and platform divisions. Requires iGaming/PSP/high-risk/crypto background and fluency in English AND Russian.\nSource: LinkedIn jobId 4432640425, live 2026-07-22 (posted 3w ago, 47 applicants). Barcelona (Remote).",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 132,
+      "date_found": "2026-07-20",
+      "title": "Vice President of Product - Digital Platform",
+      "company": "Safeguard Global",
+      "location": "Remote (Spain / Europe, EU timezone)",
+      "status": "Applied",
+      "source": "https://www.linkedin.com/jobs/view/4423563128/",
+      "fit": "Strong",
+      "recommendation": "Apply - strong fit: VP-level, reports to CPO, owns 10 teams, global platform, remote EU. Verify Norway-based remote eligibility.",
+      "notes": "What they sell: Employer of Record (EOR) and global workforce/HR services, letting companies hire, onboard, pay and stay compliant with staff in 170+ countries. Buyers are companies expanding across borders. HQ Austin, Texas.\nFunding: ~$213M raised across 4 rounds; PE-backed. Note: the payroll division was sold to Deel in March 2025, so this role sits with the remaining EOR/workforce platform business.\nInvestors: MMC Ventures (lead) and Accel-KKR (private equity, minority stake since 2019).\nTeam size: ~1,594 employees (pre-payroll-divestiture figure).\nRole: Owns delivery and outcomes across 10 product teams from discovery to value realisation, reports to the CPO, partners with Product Directors, Design and Engineering. Base ~EUR 160k (Spain market band). Remote-first, global.\nSource: LinkedIn, verified live this run (posted ~2 days ago, 200+ applicants). | [Re-saved 2026-07-22 - already tracked, no action]",
+      "apply_by": "",
+      "cover_letter": "Safeguard Global's product has to make hiring and paying people in more than 170 countries feel simple, which is one of the harder surfaces in B2B software, because every country brings its own rules. Owning ten product teams from discovery through to value across that surface is exactly the scale I have worked at.\n\nAt Gelato I was SVP Product for a global manufacturing platform spanning over 100 countries, so I have lived the problem of one platform meeting very different local realities. I built the GelatoConnect AI Estimator from zero to over 2M dollars ARR in six months and cut quote time from 30-60 minutes to 15 seconds, and I lead distributed product teams on API-first, platform patterns.\n\nI would want to understand how Safeguard thinks about where AI can take the most manual, compliance-heavy work out of global employment. Happy to connect."
+    },
+    {
+      "id": 133,
+      "date_found": "2026-07-20",
+      "title": "Director, Product Management - Digital AI Engagement",
+      "company": "Genesys",
+      "location": "Ireland / Drammen, Norway (Hybrid)",
+      "status": "Will not apply",
+      "source": "https://www.linkedin.com/jobs/view/4439861907/",
+      "fit": "Moderate",
+      "recommendation": "Consider - large enterprise, but has a Drammen (Norway) office and hybrid flexibility, AI product focus. Verify whether the role can be based in Norway before applying.",
+      "notes": "What they sell: Cloud contact-center software (CCaaS) - the Genesys Cloud platform that enterprises use to run customer service across voice, chat, email and messaging, increasingly AI-powered. HQ Daly City, California; founded 1990.\nFunding: Private (PE-owned). Backed by Permira and TCV, with later investment from Salesforce Ventures, ServiceNow and others; valued around $21B at its 2021 raise.\nInvestors: Permira, TCV, Salesforce Ventures, ServiceNow, BlackRock.\nTeam size: Large enterprise, roughly 6,000+ employees across ~70 locations globally.\nRole: Owns AI-powered asynchronous engagement strategy across Genesys Cloud (messaging, email, proactive engagement), partners with platform/engineering teams, builds and coaches a PM team. Posting references Drammen (Norway) and Galway offices, hybrid with WFH flexibility.\nSource: LinkedIn, verified live this run (posted ~6 days ago, 49 applicants). Location eligibility for a Norway-based hire should be confirmed.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 136,
+      "date_found": "2026-07-23",
+      "title": "Vice President of Product – Digital Platform",
+      "company": "Safeguard Global",
+      "location": "Spain (Remote)",
+      "status": "Applied",
+      "source": "https://www.linkedin.com/jobs/view/4423563128/",
+      "fit": "Strong",
+      "recommendation": "Apply. VP-level product role owning the digital platform at a global EOR/payroll company; fully remote, EU timezone fits. Strong parallel to turning Gelato's global operation into a software platform. Verify remote is pan-EU (not Spain-only) before applying.",
+      "notes": "[Saved 2026-07-23]\nWhat they sell: Global workforce platform - Employer of Record, global payroll, entity setup and contractor management across 187 countries, sold to companies hiring internationally without setting up a local entity.\nFunding: PE-backed growth equity; 4 funding rounds since founding in 2008.\nInvestors: Accel-KKR (lead growth equity), MMC Ventures, Adfisco.\nTeam size: Large - 400+ in-country payroll/EOR specialists; total headcount estimated ~1,500-2,000.\nRole: VP of Product - Digital Platform. Owns product vision, strategy and roadmap for the digital platform. Fully remote.\nSource: Live-checked 2026-07-23 on LinkedIn, Apply button active, reposted 4 days ago, 100+ clicked apply. Location tagged 'Spain (Remote)' - confirm whether remote is pan-EU or Spain-only before applying (Oslo/EU timezone should fit a globally distributed workforce company).",
+      "apply_by": "",
+      "cover_letter": "Safeguard Global pioneered the EOR model back in 2010, but the market has changed underneath it. Newer, software-first competitors have made self-serve the expectation, while your real edge is still 400+ in-country experts across 187 countries. The Digital Platform role is really about turning that deep operational and human expertise into software that scales without losing the local knowledge. That is the exact problem I have spent the last few years on.\n\nAt Gelato I helped turn a global manufacturing operation into a product platform. I built GelatoConnect's AI Estimator, which went from zero to over $2M ARR in six months, cut manual quoting effort by 65%, and dropped quote time from 30-60 minutes to 15 seconds. Before that, 11 years at Schlumberger across 15 countries taught me how high-reliability operations actually run in the field.\n\nI am curious how you see the balance between your in-country expert network and a self-serve platform as AI takes on more of the compliance and payroll work. Happy to connect."
+    },
+    {
+      "id": 137,
+      "date_found": "2026-07-23",
+      "title": "Director, Product Management – Digital AI Engagement",
+      "company": "Genesys",
+      "location": "Ireland (Remote)",
+      "status": "Will not apply",
+      "source": "https://www.linkedin.com/jobs/view/4439861907/",
+      "fit": "Moderate",
+      "recommendation": "Consider. Director-level product role in AI/digital customer engagement at a large CX software company; fully remote, EU timezone. One notch below Pradeep's current SVP title but at a much bigger company. Apply if a large-enterprise AI product role appeals.",
+      "notes": "[Saved 2026-07-23]\nWhat they sell: Cloud customer experience and contact-centre software (Genesys Cloud) with AI-powered customer and employee engagement, sold to enterprises for customer service.\nFunding: PE-owned; took investment from Salesforce Ventures, ServiceNow and BlackRock in 2021 at roughly $21B valuation. Late-stage, pre-IPO.\nInvestors: Permira, Hellman & Friedman, Salesforce Ventures, ServiceNow, BlackRock.\nTeam size: ~6,000-8,000 employees.\nRole: Director, Product Management - Digital AI Engagement. Owns product for digital/AI customer engagement. Fully remote, Ireland-based req.\nSource: Live-checked 2026-07-23 on LinkedIn, Apply button active, posted 1 week ago, 58 clicked apply. Right domain (AI product), remote EU fits; Director title is a step below current level.",
       "apply_by": "",
       "cover_letter": ""
     }
