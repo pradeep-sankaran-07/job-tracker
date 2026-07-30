@@ -13,6 +13,48 @@
       "notes": "[MODERATE] Caution: company went through restructuring / provisional liquidation (Sept 2024) and debt reorganisation; new CEO Feb 2025. Still operating and shipping, but check financial stability before applying.\nWhat they sell: AI for contact centres - pairs customers with agents in real time based on predicted interaction quality; serves telecom, banking, insurance, healthcare and travel.\nFunding: ~$430M raised total; unicorn (peak ~$1.6B valuation). Entered restructuring in 2024.\nInvestors: unknown (historically large PE / strategic backers).\nTeam size: ~1,150 employees (May 2026).\nRole: Director, Product Management - owns one or more agentic AI products (customer-facing AI agents across voice, chat and email). Reports to Head of Product. Remote Ireland. Salary EUR 128K-213K + 20% bonus.\nSource: LinkedIn posting live 2026-07-22 (97 applicants, posted 5 days ago). | [Re-saved 2026-07-25 — previously Applied (Afiniti, still LIVE with Apply button); reconsider only if not yet submitted] | [Corrected 2026-07-26 — status was wrongly 'Applied'; Pradeep never saw/applied. Moved back to active as New. Listing verified LIVE this run.]",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 138,
+      "date_found": "2026-07-30",
+      "title": "Produktområdeleder (Product Area Lead - Customer)",
+      "company": "Tet Digital",
+      "location": "Oslo, Norway (Dronningens gt. 40, Sentrum) - on-site/hybrid",
+      "status": "New",
+      "source": "https://www.finn.no/job/ad/471134372",
+      "fit": "Strong",
+      "recommendation": "Apply - strongest of the three Tet roles. Real line product leadership in Oslo.",
+      "notes": "What they sell: Digital products for Norwegian public transport - the rider apps, web surfaces, accounts and ticketing systems used by Ruter, Skyss, AtB, AKT, Brakar and Ostfold Kollektivtrafikk.\nFunding: Not VC-backed. Publicly owned. Established 1 Jan 2024 as Ruter's digital service development company; Skyss and AKT joined as co-owners March 2025, AtB and Ostfold Kollektivtrafikk added since.\nInvestors: Owned by the county public transport authorities (Ruter, Skyss, AtB, AKT, Brakar, Ostfold Kollektivtrafikk). Knowit is a named strategic delivery partner.\nTeam size: 300+ employees across roughly 40 cross-functional teams in five product areas. The owner group covers about 70% of all public transport journeys in Norway.\nRole: Owns an entire product area end to end with delivery and results responsibility - the main customer interfaces via app and web, plus customer identity, accounts and service solutions. Leads all product managers in the Customer product area with personnel responsibility, reports to the Produktdirektor, and works across the six partner organisations.\nSource: finn.no live listing (Step 3b scrape, confirmed active). Application deadline 7 Aug 2026; applications reviewed from week 33 due to summer holidays. Posting is in Norwegian.",
+      "apply_by": "2026-08-07",
+      "cover_letter": "Six transport authorities, one app. That is the hard part of this role: the customer surface has to feel like one clear product, while six owners each have their own market and their own priorities.\n\nI have spent the last few years on that exact problem at Gelato. We run one platform across 100+ countries with local production partners who all want their own rules, and a lot of my job is deciding what stays shared and what stays local. On GelatoConnect I built the AI Estimator from nothing to over $2M ARR in six months, cutting manual quoting effort by 65% and bringing quote time down from 30-60 minutes to 15 seconds. With Gelato+ I also ran a subscription product serving both consumers and businesses, which is close to what a transit product does: individual riders on one side, partners and operators on the other.\n\nI am curious how Tet draws the line today between what belongs in the shared customer product and what each county keeps for itself. Happy to connect."
+    },
+    {
+      "id": 139,
+      "date_found": "2026-07-30",
+      "title": "Leder Produktstrategi (Head of Product Strategy)",
+      "company": "Tet Digital",
+      "location": "Oslo, Norway (Dronningens gt. 40, Sentrum) - on-site/hybrid",
+      "status": "New",
+      "source": "https://www.finn.no/job/ad/471132845",
+      "fit": "Strong",
+      "recommendation": "Apply - senior strategy leadership across the whole portfolio, Oslo-based.",
+      "notes": "What they sell: Digital products for Norwegian public transport - the rider apps, web surfaces, accounts and ticketing systems used by Ruter, Skyss, AtB, AKT, Brakar and Ostfold Kollektivtrafikk.\nFunding: Not VC-backed. Publicly owned. Established 1 Jan 2024 as Ruter's digital service development company; Skyss and AKT joined as co-owners March 2025, AtB and Ostfold Kollektivtrafikk added since.\nInvestors: Owned by the county public transport authorities (Ruter, Skyss, AtB, AKT, Brakar, Ostfold Kollektivtrafikk). Knowit is a named strategic delivery partner.\nTeam size: 300+ employees across roughly 40 cross-functional teams in five product areas. The owner group covers about 70% of all public transport journeys in Norway.\nRole: Leads a small product strategy team responsible for strategic coherence across the five product areas and the six partner organisations. Owns the framework for that coherence, turns unclear ambitions into actionable decisions, and runs the strategic dialogue between Tet and the owner companies. Reports to the Produktdirektor. Asks for 6+ years at the intersection of strategy and product development.\nSource: finn.no live listing (Step 3b scrape, confirmed active). Application deadline 7 Aug 2026; applications reviewed from week 33. Posting is in Norwegian.",
+      "apply_by": "2026-08-07",
+      "cover_letter": "Writing a product strategy is not the hard part of this job. Getting six owner organisations with different priorities to back one direction, and then turning that into decisions 40 teams can actually build against, is the hard part.\n\nThat is the work I have been doing at Gelato. We run one product platform across more than 100 countries, and much of my time goes on turning broad ambitions into choices teams can act on. On GelatoConnect I took the AI Estimator from nothing to over $2M ARR in six months, which meant cutting a lot of debate down to a few clear decisions: 65% less manual quoting effort, and quote time down from 30-60 minutes to 15 seconds. Before that I spent 11 years at Schlumberger across 15 countries, where nothing moved unless local operations agreed it should.\n\nWhat I would want to understand early is how much of Tet's strategy is genuinely shared across the six owners, and how much is negotiated area by area. Happy to connect."
+    },
+    {
+      "id": 140,
+      "date_found": "2026-07-30",
+      "title": "Leder for Product Enablement",
+      "company": "Tet Digital",
+      "location": "Oslo, Norway (Dronningens gt. 40, Sentrum) - on-site/hybrid",
+      "status": "New",
+      "source": "https://www.finn.no/job/ad/471133407",
+      "fit": "Moderate",
+      "recommendation": "Optional third application. ProdOps and chief-of-staff shaped rather than owning product outcomes - narrower than the other two Tet roles.",
+      "notes": "What they sell: Digital products for Norwegian public transport - the rider apps, web surfaces, accounts and ticketing systems used by Ruter, Skyss, AtB, AKT, Brakar and Ostfold Kollektivtrafikk.\nFunding: Not VC-backed. Publicly owned. Established 1 Jan 2024 as Ruter's digital service development company; Skyss and AKT joined as co-owners March 2025, AtB and Ostfold Kollektivtrafikk added since.\nInvestors: Owned by the county public transport authorities (Ruter, Skyss, AtB, AKT, Brakar, Ostfold Kollektivtrafikk). Knowit is a named strategic delivery partner.\nTeam size: 300+ employees across roughly 40 cross-functional teams in five product areas. The owner group covers about 70% of all public transport journeys in Norway.\nRole: Owns the product organisation's enablement capability - ProdOps, cross-team ways of working, and the infrastructure that makes ~40 teams effective. Runs the ProdOps team through a team lead and acts as the Produktdirektor's operational partner on cross-functional initiatives. Posting explicitly points at Chief of Staff or organisational consultant backgrounds, so it is an operations role rather than a product ownership role.\nSource: finn.no live listing (Step 3b scrape, confirmed active). Application deadline 7 Aug 2026; applications reviewed from week 33. Posting is in Norwegian.",
+      "apply_by": "2026-08-07",
+      "cover_letter": ""
     }
   ],
   "archive": [
