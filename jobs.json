@@ -41,6 +41,48 @@
       "notes": "⚠️ Location flag: posted as \"Barcelona (Remote)\". Remote, but likely anchored to Spain rather than open EU-remote. Confirm they accept an Oslo-based hire before applying.\nWhat they sell: Cloud communications and CPaaS - APIs that let enterprises and developers embed voice, messaging and video into their own applications.\nFunding: Owned by Ericsson, which acquired Vonage in mid-2022 for about $6.2bn equity value. Revenue was roughly $1.4bn pre-acquisition; growth has been subdued since, with impairments and pruning of low-margin lines under Ericsson.\nInvestors: Ericsson (sole owner, publicly listed). No VC cap table.\nTeam size: unknown. Ecosystem is 1.6 million registered developers and 100,000+ business customers.\nRole: Owns the roadmap and vision for BSS and Platform Services - Lead-to-Cash, data analytics, identity, accounts and users, and the API gateway. Leads a team of Product Managers. Reporting line not stated. Note the product org is in transition: a new Vonage CEO (Christophe Van de Weyer) takes over 15 Aug 2026.\nSource: Live check passed 2026-08-02, Apply button present, posted 2 days ago, 37 applicants.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 144,
+      "date_found": "2026-08-03",
+      "title": "Produktområdeleder (Product Area Leader)",
+      "company": "Tet Digital AS",
+      "location": "Oslo, Norway",
+      "status": "New",
+      "source": "https://www.finn.no/job/ad/471134372",
+      "fit": "Strong",
+      "recommendation": "Apply - deadline is 4 days away",
+      "notes": "⚠️ Deadline 7 Aug 2026, only days away. Norwegian-language posting, so Norwegian may be expected in practice.\nWhat they sell: Digital services for Norwegian public transit. Tet builds the travel planning, ticketing and customer products used by its owner transit authorities, rather than selling to an open market.\nFunding: Not venture backed. Public-sector owned, set up 1 Jan 2024 as a Ruter subsidiary. Revenue 750.5 MNOK for 2024. By mandate the company is not run to make a profit for its owners.\nInvestors: Owners are Ruter AS (Oslo), plus Skyss and AKT who came in as co-owners in March 2025.\nTeam size: ~203 employees, 196 of them in Oslo at Dronningens gate 40.\nRole: Owns a full product area (Customer Product Area) with delivery and results accountability. Line-manages all product managers in that domain, holds budget responsibility including cost and risk, sets strategy and goals for the area, and reports to the Product Director. Sits in the wider product leadership group across 5 product areas and 6 partner organisations.\nSource: Live on finn.no, status AKTIV, confirmed 2026-08-03. Trade-off to weigh: real Director-level scope in Oslo, but a public-sector body rather than a funded scale-up.",
+      "apply_by": "2026-08-07",
+      "cover_letter": "Tet Digital sits in an unusual spot. You build for Ruter, Skyss and AKT at the same time, so every product decision has to work for three transit operators with different regions and different priorities. Keeping one product area useful to all of them, without it quietly turning into three forks, is the real job here.\n\nAt Gelato I am SVP Product, running platform products for a network operating in more than 100 countries, where local partners each want something slightly different and the platform still has to hold together. I built the GelatoConnect AI Estimator, which passed $2M ARR in six months and cut quote time from 30-60 minutes to 15 seconds by turning a messy manual process into one shared capability. I line-manage product managers and own budget and outcomes for my area.\n\nI would like to understand how you decide when a partner need becomes a platform feature and when it stays a local configuration. Happy to connect."
+    },
+    {
+      "id": 145,
+      "date_found": "2026-08-03",
+      "title": "Leder Produktstrategi (Head of Product Strategy)",
+      "company": "Tet Digital AS",
+      "location": "Oslo, Norway",
+      "status": "New",
+      "source": "https://www.finn.no/job/ad/471132845",
+      "fit": "Moderate",
+      "recommendation": "Consider - lower scope than the Product Area Leader role at the same company",
+      "notes": "⚠️ Deadline 7 Aug 2026. Same company as the Produktområdeleder role above. If applying to Tet, that one carries more scope.\nWhat they sell: Digital services for Norwegian public transit, built for its owner transit authorities rather than an open market.\nFunding: Not venture backed. Public-sector owned, Ruter subsidiary since 1 Jan 2024. Revenue 750.5 MNOK (2024), not run for owner profit.\nInvestors: Owners are Ruter AS, Skyss and AKT.\nTeam size: ~203 employees, 196 in Oslo.\nRole: Owns the strategy framework used across product areas, turning broad organisational ambitions into decision-ready questions and enabling portfolio prioritisation. Leads a small product strategy team and facilitates strategy work between Tet and its six partner companies. Reports to the Product Director. Asks for 6+ years at the intersection of strategy and product.\nSource: Live on finn.no, status AKTIV, confirmed 2026-08-03. Staff-style strategy function rather than a line product org, which is why this is Moderate not Strong.",
+      "apply_by": "2026-08-07",
+      "cover_letter": ""
+    },
+    {
+      "id": 146,
+      "date_found": "2026-08-03",
+      "title": "Head of Product & Technology",
+      "company": "Cara Care",
+      "location": "Germany (Remote-first)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4446590260/",
+      "fit": "Moderate",
+      "recommendation": "Consider - check whether they will employ someone based in Norway",
+      "notes": "⚠️ Listed as Germany (Remote) and remote-first, but the product is a German-market DiGA and employment is likely Germany-based. Confirm they can hire someone sitting in Oslo before spending time on this.\nWhat they sell: Prescription digital therapy apps for chronic gut conditions such as IBS and GERD, reimbursed under Germany's DiGA scheme so statutory health insurers pay for them.\nFunding: Raised about $16M across 3 rounds as an independent company. Acquired by Mahana Therapeutics in March 2024, then by Bayer in December 2024. Now sits inside Bayer.\nInvestors: Bayer (current owner), Mahana Therapeutics, Johnson & Johnson Innovation, Atlantic Labs, Asabys Partners, Dr. Schär.\nTeam size: unknown. Small team relative to its Bayer parent.\nRole: Owns product and technology strategy across the DiGA portfolio, including engineering architecture (mobile, web, backend, cloud, DevOps, security), data and AI, and translating regulatory requirements into the build. Leads Product, Engineering, Design and Data/AI. Reports to the Managing Director of Cara Care.\nSource: Live on LinkedIn 2026-08-03, posted 4 days ago, 39 applicants, no closure banner. Combined product plus engineering ownership under a corporate parent, which is a different shape from a pure scale-up product org.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
