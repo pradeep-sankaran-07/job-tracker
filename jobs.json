@@ -83,6 +83,34 @@
       "notes": "⚠️ Listed as Germany (Remote) and remote-first, but the product is a German-market DiGA and employment is likely Germany-based. Confirm they can hire someone sitting in Oslo before spending time on this.\nWhat they sell: Prescription digital therapy apps for chronic gut conditions such as IBS and GERD, reimbursed under Germany's DiGA scheme so statutory health insurers pay for them.\nFunding: Raised about $16M across 3 rounds as an independent company. Acquired by Mahana Therapeutics in March 2024, then by Bayer in December 2024. Now sits inside Bayer.\nInvestors: Bayer (current owner), Mahana Therapeutics, Johnson & Johnson Innovation, Atlantic Labs, Asabys Partners, Dr. Schär.\nTeam size: unknown. Small team relative to its Bayer parent.\nRole: Owns product and technology strategy across the DiGA portfolio, including engineering architecture (mobile, web, backend, cloud, DevOps, security), data and AI, and translating regulatory requirements into the build. Leads Product, Engineering, Design and Data/AI. Reports to the Managing Director of Cara Care.\nSource: Live on LinkedIn 2026-08-03, posted 4 days ago, 39 applicants, no closure banner. Combined product plus engineering ownership under a corporate parent, which is a different shape from a pure scale-up product org.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 147,
+      "date_found": "2026-08-04",
+      "title": "Director of Product (Platform)",
+      "company": "Aidn",
+      "location": "Oslo, Norway (Hybrid)",
+      "status": "New",
+      "source": "https://aidn.teamtailor.com/jobs/8058116-director-of-product",
+      "fit": "Strong",
+      "recommendation": "Apply - best Oslo-based fit found in weeks. Confirm Norwegian C1 requirement before investing time.",
+      "notes": "⚠️ Posting requires Norwegian at C1 level plus English. Verify this is a hard gate before applying.\nWhat they sell: A modern electronic health record system for Norwegian municipal care services, replacing decades-old legacy systems; buyers are municipalities (approx. 20 piloting to date).\nFunding: Corporate venture inside Kernel, Norway's largest eHealth group (not VC-funded; backed by the Kernel group and its municipal/health-sector owners). No disclosed external round.\nInvestors: Kernel (parent group). Kernel employs ~600 people across Norwegian development hubs.\nTeam size: ~100 employees at Aidn.\nRole: Owns strategy and execution for the Platform product area (infrastructure, IAM, data migrations, Open Aidn, and technical onboarding of new municipalities). Leads 3 PMs plus an integration lead, with 30+ people across 4 teams in scope. Reports to the CPO. Wants proven AI/LLM product shipping and regulated or safety-critical systems background. Salary 1,450,000-1,600,000 NOK, six weeks vacation, employee shares.\nSource: Live on Teamtailor with active apply form, verified 2026-08-04. Application deadline 14 Aug 2026.",
+      "apply_by": "2026-08-14",
+      "cover_letter": "The hard part of replacing municipal health records is not the features, it is getting one municipality after another onto the same platform without anything breaking along the way. That is a platform problem: identity, data migration, integrations, and the onboarding path every new municipality has to walk. It is also the kind of work I have spent most of my career on.\n\nAt Gelato I run product for a manufacturing platform operating in over 100 countries. I built GelatoConnect's AI Estimator from nothing to over $2M ARR in six months, cutting manual quoting effort by 65% and bringing quote time down from 30 to 60 minutes to about 15 seconds. Before that, 11 years at Schlumberger across 15 countries, on systems where failure in the field was not an option.\n\nI am curious how Aidn decides what belongs in the platform itself and what each municipality gets to configure, as more of them come on. Happy to connect."
+    },
+    {
+      "id": 148,
+      "date_found": "2026-08-04",
+      "title": "Leder for Product Enablement (Head of Product Enablement)",
+      "company": "Tet Digital AS",
+      "location": "Oslo, Norway (Hybrid)",
+      "status": "New",
+      "source": "https://www.finn.no/job/ad/471133407",
+      "fit": "Moderate",
+      "recommendation": "Consider - Oslo and Director level, but it is a ProdOps/enablement seat rather than owning product outcomes. Deadline is 7 Aug, so decide fast.",
+      "notes": "What they sell: Digital services for Norwegian public transport (ticketing, journey planning, dynamic mobility). Around 69-70% of all collective transport journeys in Norway run through Tet's services. Customers are the county mobility operators who also own the company.\nFunding: Not VC-funded. Publicly owned subsidiary, spun out of Ruter on 1 Jan 2024. Org.nr 932 295 288.\nInvestors: Ruter (78.5%), Skyss (16.2%), AKT (5.3%), with AtB (Trøndelag) and Østfold Kollektivtrafikk joining as co-owners in April 2026.\nTeam size: ~206-300 employees across product, design and technology.\nRole: Dual mandate. Operationally, right hand to the Product Director on cross-cutting initiatives and unblocking. Structurally, owns the product org's enablement capability - ProdOps, shared ways of working, and the infrastructure that keeps teams autonomous. Leads the ProdOps team through a team lead plus a coaching function. Spans 40 product teams and six partner organisations. Reports to the Product Director.\nSource: Live on finn.no (Step 3b real-time scrape), verified 2026-08-04. Application deadline 7 Aug 2026. Third open Tet Digital product-leadership role in the tracker (see IDs 144, 145).",
+      "apply_by": "2026-08-07",
+      "cover_letter": ""
     }
   ],
   "archive": [
