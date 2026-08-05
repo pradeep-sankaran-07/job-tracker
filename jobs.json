@@ -111,6 +111,34 @@
       "notes": "What they sell: Digital services for Norwegian public transport (ticketing, journey planning, dynamic mobility). Around 69-70% of all collective transport journeys in Norway run through Tet's services. Customers are the county mobility operators who also own the company.\nFunding: Not VC-funded. Publicly owned subsidiary, spun out of Ruter on 1 Jan 2024. Org.nr 932 295 288.\nInvestors: Ruter (78.5%), Skyss (16.2%), AKT (5.3%), with AtB (Trøndelag) and Østfold Kollektivtrafikk joining as co-owners in April 2026.\nTeam size: ~206-300 employees across product, design and technology.\nRole: Dual mandate. Operationally, right hand to the Product Director on cross-cutting initiatives and unblocking. Structurally, owns the product org's enablement capability - ProdOps, shared ways of working, and the infrastructure that keeps teams autonomous. Leads the ProdOps team through a team lead plus a coaching function. Spans 40 product teams and six partner organisations. Reports to the Product Director.\nSource: Live on finn.no (Step 3b real-time scrape), verified 2026-08-04. Application deadline 7 Aug 2026. Third open Tet Digital product-leadership role in the tracker (see IDs 144, 145).",
       "apply_by": "2026-08-07",
       "cover_letter": ""
+    },
+    {
+      "id": 149,
+      "date_found": "2026-08-05",
+      "title": "Direktør Produkt & Analyse (Director Product & Analytics)",
+      "company": "Gjensidige Pensjonsforsikring AS",
+      "location": "Oslo, Norway (on-site)",
+      "status": "New",
+      "source": "https://www.finn.no/job/ad/468490276",
+      "fit": "Moderate",
+      "recommendation": "Oslo executive seat reporting to the CEO with a place on the leadership team, so the level is right and the location is ideal. The domain is the catch: 'product' here means pension and life insurance products priced by actuaries, not digital or SaaS product management. Worth a conversation if he wants a Norwegian corporate leadership seat, but it is a pivot away from tech product rather than a step along it.",
+      "notes": "What they sell: Occupational pension and life insurance products (defined-contribution schemes, disability and death cover) sold to Norwegian employers for their staff.\nFunding: Not venture funded. Wholly owned subsidiary of Gjensidige Forsikring ASA, listed on Oslo Børs (ticker GJF). Subsidiary founded 2005.\nInvestors: Not applicable - parent Gjensidige Forsikring ASA is a publicly listed Norwegian insurer.\nTeam size: ~151 employees in the pension subsidiary; the wider Gjensidige group is several thousand.\nRole: Leads the professional group covering product, analysis, actuarial work, pricing, reserving, reporting and business development. Described as a broad mandate with considerable decision-making authority. Reports directly to the CEO (administrerende direktør) and sits on the company leadership team.\nSource: finn.no listing confirmed active this run. Application deadline 24 August 2026. Oslo (0191, Bjørvika), on-site, no remote or hybrid arrangement mentioned.",
+      "apply_by": "2026-08-24",
+      "cover_letter": ""
+    },
+    {
+      "id": 150,
+      "date_found": "2026-08-05",
+      "title": "Head of Product & Growth",
+      "company": "saas.group",
+      "location": "Remote, Europe (overlap required with CET and US East Coast)",
+      "status": "New",
+      "source": "https://job-boards.eu.greenhouse.io/saasgroup/jobs/4936550101",
+      "fit": "Moderate",
+      "recommendation": "Right title and fully remote, so Oslo works with no negotiation needed. The scope is the problem: this is product ownership of one small SaaS brand that saas.group is in the middle of acquiring, with a small engineering and QA team, and the posting asks for 4-7+ years of experience. That is closer to a general manager of a micro-brand than a scale-up VP Product, and well below SVP scope. Consider only if he wants hands-on end-to-end ownership of a small product rather than a larger org.",
+      "notes": "What they sell: Acquires bootstrapped B2B SaaS businesses (typically $1M-$10M ARR) and runs them as a portfolio spanning online marketing, productivity and developer tools; each brand keeps its own product and customers.\nFunding: Largely self-funded. Founders started with personal capital, added debt lines from 2020, and sold a single-digit percentage stake in a ~$25M equity round to strategic investors. Portfolio generates $80M+ ARR across ~25 acquisitions, growing roughly 100% year over year.\nInvestors: Founded by Tim Schumacher, Tobias Schlottke and Ulrich Essmann. Minority strategic investors are experienced SaaS entrepreneurs rather than institutional VCs.\nTeam size: ~350 people across 50+ countries, fully remote.\nRole: Owns the product roadmap and prioritisation for an upcoming portfolio acquisition, directs a small dedicated engineering/QA team, stays close to customers and merchant accounts daily, and owns conversion, expansion and onboarding. Expected to lean hard on AI tooling. Reports to a managing partner. Asks for 4-7+ years in product management, growth or founder/operator roles in B2B SaaS or e-commerce.\nSource: Greenhouse listing verified live with an active Apply option this run. No application deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
