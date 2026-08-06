@@ -139,6 +139,34 @@
       "notes": "What they sell: Acquires bootstrapped B2B SaaS businesses (typically $1M-$10M ARR) and runs them as a portfolio spanning online marketing, productivity and developer tools; each brand keeps its own product and customers.\nFunding: Largely self-funded. Founders started with personal capital, added debt lines from 2020, and sold a single-digit percentage stake in a ~$25M equity round to strategic investors. Portfolio generates $80M+ ARR across ~25 acquisitions, growing roughly 100% year over year.\nInvestors: Founded by Tim Schumacher, Tobias Schlottke and Ulrich Essmann. Minority strategic investors are experienced SaaS entrepreneurs rather than institutional VCs.\nTeam size: ~350 people across 50+ countries, fully remote.\nRole: Owns the product roadmap and prioritisation for an upcoming portfolio acquisition, directs a small dedicated engineering/QA team, stays close to customers and merchant accounts daily, and owns conversion, expansion and onboarding. Expected to lean hard on AI tooling. Reports to a managing partner. Asks for 4-7+ years in product management, growth or founder/operator roles in B2B SaaS or e-commerce.\nSource: Greenhouse listing verified live with an active Apply option this run. No application deadline stated.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 151,
+      "date_found": "2026-08-06",
+      "title": "Product Pillar Lead (Supplier Management)",
+      "company": "Pactum AI",
+      "location": "Europe (Remote)",
+      "status": "New",
+      "source": "https://careers.pactum.com/jobs/8063759-product-pillar-lead",
+      "fit": "Strong",
+      "recommendation": "Apply - and go via the Insight talent team first. Fully Europe-remote, GM-level ownership of a whole product line, and the agentic-AI-replacing-a-human-commercial-decision problem is a direct rhyme with the GelatoConnect AI Estimator.",
+      "notes": "Warm intro: Pradeep knows the Insight talent team - reach out directly rather than applying cold.\nWhat they sell: Agentic AI that runs autonomous supplier negotiations end to end for large enterprise procurement teams; buyers are Fortune 500 procurement organisations (Walmart and Maersk are known users).\nFunding: ~$108M total, most recently a $54M Series C led by Insight Partners (2026); $20M Series B led by Karma Ventures (Jul 2024).\nInvestors: Insight Partners, Atomico, Karma Ventures, Maersk, Project A, 3VC, Portfolion, SuperAngel.\nTeam size: ~166 employees (May 2026). Founded 2019 in Estonia by Martin Rand, Kaspar Korjus and Kristjan Korjus.\nRole: Owns the Supplier Management product line end to end - strategy, roadmap, engineering execution and design direction. Posting frames it as GM-level ownership with a founder-mode mindset. Team size and reporting line are not stated in the posting.\nSource: Live-checked 2026-08-06, 'Apply now' button visible, no closed/expired text. Listed as Europe (Remote), fully remote. No application deadline stated.",
+      "apply_by": "",
+      "cover_letter": "Pactum's hard part is not the negotiation logic, it is getting a procurement team to let software commit to terms on their behalf. Supplier Management makes that harder, because it moves you from one-off deals to owning the relationship over time.\n\nI built something with the same trust problem at Gelato. The GelatoConnect AI Estimator took quoting away from people and handed it to a model: quote time went from 30 to 60 minutes down to 15 seconds, manual quoting effort dropped 65%, and it went from zero to over $2M ARR in six months. Most of that work was not the model, it was earning the right to let it run unsupervised. Before Gelato I spent 11 years at Schlumberger across 15 countries, a lot of it on the supplier and contracting side of industrial operations, so I know what the buyer actually worries about.\n\nWhat does Pactum look like when the supplier is running an agent too? Happy to connect."
+    },
+    {
+      "id": 152,
+      "date_found": "2026-08-06",
+      "title": "Head of Product - Agentic Offerings (Platform & Payments)",
+      "company": "commercetools",
+      "location": "Berlin, Germany (Hybrid - 3 days/week in Berlin, Valencia or London office)",
+      "status": "New",
+      "source": "https://job-boards.greenhouse.io/commercetools/jobs/7774530003",
+      "fit": "Moderate",
+      "recommendation": "Worth a conversation via the Insight talent team, but settle the location question before investing effort. Strong domain fit (agentic AI on an API-first platform, reports to CPO) let down by a three-days-in-office requirement in Berlin.",
+      "notes": "⚠️ Non-Oslo hybrid - included because commercetools is an Insight Partners portfolio company (shared-investor link, Pradeep knows the Insight talent team) and the domain fit on agentic commerce plus platform/payments is strong. BUT the posting requires three days a week in the Berlin, Valencia or London office, which is a residence requirement rather than a fly-in commute. Verify openness to an Oslo-based hire before applying.\nWarm intro: Pradeep knows the Insight talent team - reach out directly rather than applying cold.\nWhat they sell: Headless, API-first composable commerce platform. Enterprise retailers and brands buy it to build custom storefronts and commerce flows on top of its APIs rather than a monolithic suite. Pioneer of the headless commerce category.\nFunding: ~$291M total across 3 rounds; last known valuation $1.9B (Sep 2021, $140M Series C led by Accel). Insight Partners first invested at Series B in Oct 2019.\nInvestors: Insight Partners, Accel, Eurazeo, REWE Group.\nTeam size: ~640 employees (2026). Reported ~$175M ARR.\nRole: Leads product and design vision for the AI agent commerce offerings, specifically the AI Hub and AgentSPHERE products. Hires, leads and mentors a group of PMs and designers. Reports to the Chief Product Officer and partners closely with the Engineering VP.\nSource: Live-checked 2026-08-06, Apply button and working application form visible, no closed/expired text. No application deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
