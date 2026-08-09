@@ -111,6 +111,34 @@
       "notes": "⚠️ Non-Oslo hybrid — included because Omnea is an Insight Partners portfolio company (Insight co-led the Series B). Verify openness to an Oslo-based hire before applying.\nWarm intro: Pradeep knows the Insight talent team — reach out directly rather than applying cold.\nURL fetch failed — the Ashby posting did not render, so work model, role scope and reporting line are unverified. Verify manually.\nNote: Omnea also has a second open role, Product Director - Finance (https://jobs.ashbyhq.com/omnea/c70244ed-53c8-4d8f-b22a-fcf5db933e23). One approach covers both.\nWhat they sell: An AI-native procurement intake and orchestration platform that routes purchase requests through finance, legal, security and IT approvals. Bought by CFO and procurement teams. Customers include Spotify, Wise, MongoDB, Monzo and Adecco Group.\nFunding: Over $75M total. $50M Series B in September 2025.\nInvestors: Insight Partners and Khosla Ventures co-led the Series B, with Accel, Point Nine, First Round Capital and Prosus participating.\nTeam size: unknown exact figure. Headcount more than tripled and revenue grew fivefold in the year to September 2025. Founded 2022.\nRole: Product Director. Scope unverified because the posting did not render.\nSource: Insight Partners board (Getro API), listed 2026-08-09. Active-listing check inconclusive — verify manually.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 161,
+      "date_found": "2026-08-09",
+      "title": "Product Director - Finance",
+      "company": "Omnea",
+      "location": "London, UK (Hybrid)",
+      "status": "New",
+      "source": "https://jobs.ashbyhq.com/omnea/c70244ed-53c8-4d8f-b22a-fcf5db933e23",
+      "fit": "Moderate",
+      "recommendation": "Use the Insight talent contact rather than applying cold. This is the better of the two Omnea roles on the board for you - the finance offering is purchase orders, invoice capture, matching and global payments, which is much closer to the quoting and order flow you built at Gelato than a generic procurement role. The blocker is the same one as row 160: it is a London hybrid role, so settle whether they would take an Oslo-based hire before spending effort.",
+      "notes": "⚠️ Non-Oslo hybrid - included because Omnea is an Insight Partners portfolio company (Insight co-led the $50M Series B), which is the shared-investor link, and the finance/payments scope is a genuine domain fit. Posting explicitly says Location Type: Hybrid, London. Verify openness to an Oslo-based hire before applying.\nWarm intro: Pradeep knows the Insight talent team - reach out directly rather than applying cold.\nRelated: this is a second, distinct Omnea role alongside row 160 (Product Director). Same company and warm-intro angle, different remit.\nWhat they sell: AI-native procurement intake and orchestration - a single front door for supplier requests that automates approvals, renewals, supplier risk checks and spend visibility for enterprise finance, legal, IT and security teams.\nFunding: ~$75M total. $50M Series B (September 2025) led by Insight Partners and Khosla Ventures.\nInvestors: Insight Partners, Khosla Ventures, Accel, Point Nine, First Round Capital, Prosus.\nTeam size: unknown exact headcount; company says it more than tripled headcount and 10x'd ARR to double-digit millions over the past 18 months. Founded 2022 by Ben Freeman. Customers include Spotify, MongoDB, Monzo and Albertsons.\nRole: Owns product strategy and execution for Omnea's finance offering - purchase orders, invoice collection, matching and global payments. Hands-on at first, then builds and manages a team of PMs. Reports into the VP of Product. Found via the Insight Partners portfolio board (Getro API).",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 162,
+      "date_found": "2026-08-09",
+      "title": "Director of Product & Delivery",
+      "company": "uMed",
+      "location": "United Kingdom (Remote, tagged UK - residency unconfirmed)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4448855270/",
+      "fit": "Moderate",
+      "recommendation": "A stretch in the wrong direction on scope, so treat it as a low-priority option. Reporting to the CPTO with four direct reports at a Series A company is a smaller job than what you run now, and the health-data domain is new. The listing carries no residency or timezone statement, only a UK country tag, so confirm they can employ someone in Norway before spending time on it. Worth a look mainly if you want a hands-on build role at an early company.",
+      "notes": "Location check: listing surfaced under LinkedIn's remote filter but is tagged United Kingdom with no sentence anywhere about remote eligibility, residency or timezone. Per the country-tag rule this is a verify-before-applying case, not a confirmed Norway-eligible role.\nWhat they sell: A clinical research network that links patients, electronic health records and research groups so healthcare providers can run more clinical studies. Covers around 90 GP sites in the UK representing over 2,000,000 patients, and has recently expanded into the US.\nFunding: ~$17.4M total across two rounds. Series A of $12.5M in July 2023 (reported locally as £9.8m), seed of ~$4.9M.\nInvestors: AlbionVC, Delin Ventures, Playfair Capital, 11.2 Capital.\nTeam size: unknown - no reliable headcount published.\nRole: Leads the Application Product, Delivery and Product Operations functions. Reports to the Chief Product & Technology Officer and directly manages four people - Application Product Manager, Product Designer, Scrum Master and Product Operations Specialist. Founded 2018 by Matt Wilson, based in London.\nSource: LinkedIn listing verified live this run, posted ~4 days ago, 148 applicants. Found via the worldwide-remote LinkedIn query.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
