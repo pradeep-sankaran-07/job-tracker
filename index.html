@@ -226,9 +226,8 @@
 
 <script>
 const REPO = 'pradeep-sankaran-07/job-tracker';
-const RAW_BASE = `https://raw.githubusercontent.com/${REPO}/main/jobs.json`;
+const TOKEN_KEY = 'jobtracker_gh_token';
 const API_URL  = `https://api.github.com/repos/${REPO}/contents/jobs.json`;
-const GH_TOKEN = [103,105,116,104,117,98,95,112,97,116,95,49,49,66,81,90,86,79,80,73,48,114,82,48,78,103,100,104,74,65,103,72,110,95,111,115,81,69,87,83,65,108,106,88,65,84,109,107,68,77,80,50,76,88,106,52,83,104,99,97,78,79,89,98,51,101,85,121,87,86,121,69,84,97,85,56,83,55,52,53,87,80,65,52,80,118,101,118,86,97,83,120,72].map(c=>String.fromCharCode(c)).join('');
 
 let state = { jobs: [], archive: [] };
 let fileSha = null;
@@ -263,38 +262,62 @@ function fmtDate(d) {
   return d;
 }
 
+// ── Token ──────────────────────────────────────────────────────────────────
+// The token is never stored in this file - the repo is public. It lives in this
+// browser's localStorage and is only needed to write status changes back.
+function getToken(allowPrompt = true) {
+  let t = localStorage.getItem(TOKEN_KEY);
+  if (!t && allowPrompt) {
+    t = (window.prompt(
+      'Paste a GitHub token with Contents: write on this repo.\n\n' +
+      'It is stored in this browser only, never in the page source.'
+    ) || '').trim();
+    if (t) localStorage.setItem(TOKEN_KEY, t);
+  }
+  return t;
+}
+
 // ── Load data ──────────────────────────────────────────────────────────────
+// Reads go through the contents API, not raw.githubusercontent.com: raw is
+// CDN-cached for ~5 min and serves stale data after a push, which the
+// ?nocache= parameter did not defeat. No auth header - the repo is public, so
+// reads keep working if the token is rotated or removed.
+async function fetchState() {
+  const r = await fetch(`${API_URL}?ref=main&nocache=${Date.now()}`, {
+    headers: { Accept: 'application/vnd.github+json', 'Cache-Control': 'no-cache' },
+  });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  const meta = await r.json();
+  const bin = atob(String(meta.content || '').replace(/\s/g, ''));
+  const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
+  return { data: JSON.parse(new TextDecoder('utf-8').decode(bytes)), sha: meta.sha };
+}
+
+// btoa() needs a binary string. Encode as UTF-8 first so accents and emoji in
+// the notes survive, and chunk it - spreading 200KB+ of bytes into
+// String.fromCharCode blows the argument limit.
+function toBase64(str) {
+  const bytes = new TextEncoder().encode(str);
+  let bin = '';
+  for (let i = 0; i < bytes.length; i += 0x8000) {
+    bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+  }
+  return btoa(bin);
+}
+
 async function loadData() {
   document.getElementById('active-tbody').innerHTML = '<tr><td colspan="6" class="loading"><span class="spinner"></span>Loading…</td></tr>';
   document.getElementById('archive-tbody').innerHTML = '<tr><td colspan="6" class="loading"><span class="spinner"></span>Loading…</td></tr>';
   try {
-    // Read via the contents API, not RAW_BASE: raw.githubusercontent.com is CDN-cached
-    // for ~5 min and serves stale data after a push. This call also returns the sha,
-    // so no separate refreshSha() round trip is needed. No auth header - the repo is
-    // public, so reads keep working even if the token is revoked.
-    const r = await fetch(`${API_URL}?ref=main&nocache=${Date.now()}`, {
-      headers: { Accept: 'application/vnd.github+json', 'Cache-Control': 'no-cache' },
-    });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const meta = await r.json();
-    const bin = atob(String(meta.content || '').replace(/\s/g, ''));
-    const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
-    state = JSON.parse(new TextDecoder('utf-8').decode(bytes));
-    fileSha = meta.sha;
+    const { data, sha } = await fetchState();
+    state = data;
+    fileSha = sha;
     render();
     const ts = new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
     document.getElementById('last-updated').textContent = `Updated ${ts}`;
   } catch(e) {
     document.getElementById('active-tbody').innerHTML = `<tr><td colspan="6" class="empty"><div class="empty-icon">⚠️</div>Failed to load: ${esc(e.message)}</td></tr>`;
   }
-}
-
-async function refreshSha() {
-  try {
-    const r = await fetch(API_URL, { headers: { Authorization: `token ${GH_TOKEN}` } });
-    const j = await r.json();
-    fileSha = j.sha;
-  } catch(_) {}
 }
 
 // ── Render ─────────────────────────────────────────────────────────────────
@@ -362,39 +385,53 @@ async function handleStatusChange(select) {
   const jobId = parseInt(select.dataset.id, 10);
   const newStatus = select.value;
 
+  const token = getToken();
+  if (!token) {
+    toast('No token saved - status not changed', 'error');
+    await loadData();
+    return;
+  }
+
   select.classList.add('saving');
   select.disabled = true;
 
   try {
-    // Update local state
-    const job = state.jobs.find(j => j.id === jobId);
-    if (job) job.status = newStatus;
+    // Write against the file as it is right now, never against the copy this tab
+    // loaded. A tab left open on stale data would otherwise push its whole
+    // snapshot back and silently undo everything written since it loaded.
+    const { data: fresh, sha } = await fetchState();
+    const job = [...fresh.jobs, ...fresh.archive].find(j => j.id === jobId);
+    if (!job) throw new Error(`Job ${jobId} is no longer in the file - reloading`);
+    job.status = newStatus;
 
-    // Get fresh SHA if needed
-    if (!fileSha) await refreshSha();
-
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(state, null, 2))));
+    const content = toBase64(JSON.stringify(fresh, null, 2));
     const res = await fetch(API_URL, {
       method: 'PUT',
       headers: {
-        Authorization: `token ${GH_TOKEN}`,
+        Authorization: `token ${token}`,
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        message: `Update ${job?.company || jobId} — ${newStatus}`,
+        message: `Update ${job.company || jobId} — ${newStatus}`,
         content,
-        sha: fileSha,
+        sha,
       }),
     });
 
     if (!res.ok) {
-      const err = await res.json();
+      const err = await res.json().catch(() => ({}));
+      // 401/403: bad or expired token - drop it so the next attempt re-prompts.
+      if (res.status === 401 || res.status === 403) localStorage.removeItem(TOKEN_KEY);
+      // 409: someone wrote between our read and this PUT. The reload below picks
+      // that up, and the change can be made again against the newer file.
       throw new Error(err.message || `HTTP ${res.status}`);
     }
 
     const result = await res.json();
+    state = fresh;
     fileSha = result.content.sha;
-    toast(`Saved — ${job?.company} marked "${newStatus}"`, 'success');
+    render();
+    toast(`Saved — ${job.company} marked "${newStatus}"`, 'success');
   } catch(e) {
     toast(`Save failed: ${e.message}`, 'error');
     await loadData(); // Reset to server state
