@@ -293,6 +293,48 @@
       "notes": "WARNING: Previously found a ghost listing at this company (VP Product Strategy, finn.no ad 426215337, archived as 'Not a real job') - URL verified live this run, no 'no longer accepting applications' banner.\nSource: LinkedIn search (Norway, Head of Product query), verified live this run.\nWhat they sell: Nordic digital infrastructure - hyperscale and colocation data centres, long-haul fibre networks and industrial real estate, sold to hyperscalers, AI compute customers and enterprises.\nFunding: Founded 2006. BGO has invested over EUR 640M of equity since 2020, including a EUR 350M round; founder and employees still hold the majority. Closed a USD 482M senior secured loan for the N01 campus in Vennesla.\nInvestors: BGO (BentallGreenOak); founder and employee majority ownership.\nTeam size: ~200-300 employees. HQ Oslo.\nRole: Owns the data-and-software platform behind every product surface and every AI agent - the data layer, platform architecture, build-versus-buy calls and the governance/security interface layer. Leads a focused platform team spanning DevOps, backend and data product development, plus external consultants. Reports to the VP AI & Digital.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 174,
+      "date_found": "2026-08-14",
+      "title": "Head of Product, Core Banking Systems",
+      "company": "N26",
+      "location": "Berlin, Germany",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4451943878/",
+      "fit": "Moderate",
+      "recommendation": "Worth a conversation if N26 will consider an Oslo base. Strong level match and a genuinely foundational platform brief, but the posting names Berlin with no remote or hybrid language, so confirm arrangement before spending effort.",
+      "notes": "⚠️ Non-Oslo hybrid - included because N26 is an Insight Partners portfolio company (Pradeep knows the Insight talent team, so there is a warm route in) and Oslo-Berlin is a 2h flight. Verify openness to an Oslo base before applying.\nWarm intro: Insight Partners is an investor - reach out through the Insight talent team rather than applying cold.\nWhat they sell: Mobile-first retail bank. Current accounts, cards, savings, investing and lending sold direct to consumers across Europe through tiered app subscriptions.\nFunding: ~$1.72B total across 11 rounds. Largest was Series E, $900M in Oct 2021. Valued ~$3B as of May 2026, down from a $9B peak in 2021.\nInvestors: Insight Partners, Third Point Ventures, Coatue Management, Dragoneer, GIC, Eiffel Investment Group.\nTeam size: ~1,850 employees (May 2026).\nRole: Owns the Core Systems product roadmap across Product Enablement (lending, deposits, payments gateway) and Balance Sheet Infrastructure. Leads a team of Core Systems Product Managers and partners with Engineering, Treasury, Risk and Banking Operations. Reporting line not stated in the posting.\nSource: Insight Partners board + LinkedIn. Live-checked 2026-08-14, accepting applications (posted 2 days ago, 32 applicants). No deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 175,
+      "date_found": "2026-08-14",
+      "title": "Head of Product - Lending",
+      "company": "N26",
+      "location": "Berlin or Barcelona",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4425627790/",
+      "fit": "Moderate",
+      "recommendation": "The stronger of the two N26 roles: a P&L-owning vertical with 4-6 direct reports, and it already flexes across two cities, which is a better sign for an Oslo conversation. Ask about location first.",
+      "notes": "⚠️ Non-Oslo hybrid - included because N26 is an Insight Partners portfolio company (warm route via the Insight talent team) and the role already flexes between Berlin and Barcelona, which suggests some location flexibility. Verify openness to an Oslo base before applying.\nWarm intro: Insight Partners is an investor - reach out through the Insight talent team rather than applying cold.\nWhat they sell: Mobile-first retail bank. Current accounts, cards, savings, investing and lending sold direct to consumers across Europe through tiered app subscriptions.\nFunding: ~$1.72B total across 11 rounds. Largest was Series E, $900M in Oct 2021. Valued ~$3B as of May 2026, down from a $9B peak in 2021.\nInvestors: Insight Partners, Third Point Ventures, Coatue Management, Dragoneer, GIC, Eiffel Investment Group.\nTeam size: ~1,850 employees (May 2026).\nRole: Runs the Lending vertical end to end - long-term lending strategy and roadmap, product adoption and growth, and P&L performance for retail lending. Builds and leads 4-6 direct reports, working across Engineering, Credit, Data Science, Design and senior management. Listed at Director seniority.\nSource: Insight Partners board + LinkedIn. Live-checked 2026-08-14, Apply button active, over 200 applicants. No deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 176,
+      "date_found": "2026-08-14",
+      "title": "Chief Product Officer",
+      "company": "Viz.ai",
+      "location": "United States (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4441140870/",
+      "fit": "Moderate",
+      "recommendation": "CPO title at a unicorn is the right level, and the company describes itself as remote-first across the US and EU, so Norway is not obviously ruled out. But the role is tagged United States and US hospital sales is a domain Pradeep has not worked in. Confirm EU eligibility before investing time.",
+      "notes": "⚠️ Location needs checking - the role is tagged United States, but the posting says \"We are a remote-first company across the U.S. and EU, with a team in Tel Aviv operating in a flexible hybrid model.\" No work-authorization clause, so this is flagged rather than discarded. Confirm EU/Norway eligibility before applying.\nWarm intro: Insight Partners co-led the Series D - Pradeep knows the Insight talent team, so there may be a warm route in.\nWhat they sell: AI platform that spots disease on medical imaging and coordinates the care team around it, starting with stroke. Sold as subscription SaaS to hospitals and health systems.\nFunding: ~$289M total across 10 rounds. Largest was Series D, $100M in Apr 2022 at a $1.2B valuation (unicorn).\nInvestors: Insight Partners, Tiger Global, Kleiner Perkins, GV (Google Ventures), CRV, Scale Ventures, Threshold, Sozo Ventures, Susa, AME Cloud Ventures.\nTeam size: ~333 employees (May 2026).\nRole: Chief Product Officer owning company-wide product strategy. Team size and reporting line not detailed in the posting beyond the executive scope.\nSource: LinkedIn worldwide-remote query. Live-checked 2026-08-14, accepting applications (posted 6 days ago, over 200 applicants). No deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
