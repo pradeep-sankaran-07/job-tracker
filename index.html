@@ -282,11 +282,33 @@ function getToken(allowPrompt = true) {
 // CDN-cached for ~5 min and serves stale data after a push, which the
 // ?nocache= parameter did not defeat. No auth header - the repo is public, so
 // reads keep working if the token is rotated or removed.
+//
+// Send ONLY CORS-safelisted request headers here. GitHub's preflight response
+// lists what it accepts (Authorization, Content-Type, If-None-Match, ...) and
+// Cache-Control is NOT on that list - sending it turns this into a preflighted
+// request that GitHub rejects, and the browser then blocks the call outright
+// with "TypeError: Failed to fetch" before any HTTP status comes back. Accept
+// is safelisted, so this stays a simple request with no preflight. Cache
+// busting is the ?nocache= parameter's job, not a header's.
 async function fetchState() {
-  const r = await fetch(`${API_URL}?ref=main&nocache=${Date.now()}`, {
-    headers: { Accept: 'application/vnd.github+json', 'Cache-Control': 'no-cache' },
-  });
-  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  let r;
+  try {
+    r = await fetch(`${API_URL}?ref=main&nocache=${Date.now()}`, {
+      headers: { Accept: 'application/vnd.github+json' },
+    });
+  } catch (e) {
+    // fetch() only rejects on network/CORS failure - an HTTP error still
+    // resolves. Say so, otherwise this surfaces as a bare "Failed to fetch".
+    throw new Error(`Network or CORS error reaching the GitHub API (${e.message})`);
+  }
+  if (!r.ok) {
+    // 403 with the rate-limit budget spent is the common one: the contents API
+    // allows 60 unauthenticated reads per hour per IP.
+    if (r.status === 403 && r.headers.get('X-RateLimit-Remaining') === '0') {
+      throw new Error('GitHub API rate limit reached - try again in a few minutes');
+    }
+    throw new Error(`HTTP ${r.status}`);
+  }
   const meta = await r.json();
   const bin = atob(String(meta.content || '').replace(/\s/g, ''));
   const bytes = Uint8Array.from(bin, c => c.charCodeAt(0));
