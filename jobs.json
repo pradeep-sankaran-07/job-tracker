@@ -13,6 +13,62 @@
       "notes": "What they sell: Managed, git-driven cloud application platform (PaaS). Platform.sh is the mature product with an enterprise base including the Financial Times, Gap, Orange, Hachette, IKEA and several universities; Upsun is the newer platform launched in 2024, positioned around AI-augmented workflows where agents write and test code, granular resource management and enterprise modernisation. Founded 2010.\nFunding: Private, venture backed. Round detail not confirmed this run.\nInvestors: Not confirmed this run.\nTeam size: Not confirmed. Fully distributed, recognised in Forbes' Top 30 Companies for Remote Jobs and France's Best Workplaces for Women.\nRole: Executive portfolio stewardship across the product line - the posting asks for substantial executive leadership experience managing a complex multi-product portfolio at varying maturity stages, which fits a company running Platform.sh and Upsun in parallel.\nSource: Company careers page, backed by the Greenhouse board. Direct fetch was blocked by this environment's network policy, so details came from the indexed posting and aggregator mirrors; one aggregator carried conflicting US city tags (Detroit, Boston) that look like index noise rather than the real location. Confirm location and eligibility with the recruiter.\nDUPLICATE RESOLVED: the separate \"VP, Product - Remote Woman\" card is the same job. RemoteWoman is a job board for women in remote work, not an employer, and its Greenhouse board mirrors this company's listings under the header \"Jobs at Upsun (via Remote Woman)\" with the same Canada/France/Spain/UK/Germany eligibility. Tracked once here rather than twice.",
       "apply_by": "",
       "cover_letter": "Platform.sh becoming Upsun means running two products with opposite demands. The mature platform carries enterprise customers who want nothing to change, while the newer one is being repositioned around agents writing and testing code, which changes who the user even is. Deciding what the older product stops getting is usually harder than any roadmap for the new one.\n\nThat is the shape of work I have done. At Gelato I was SVP Product for GelatoConnect, an API-led manufacturing platform serving production partners in over 100 countries, where the job was making messy local operations behave like software. The clearest example is the AI Estimator: quote time went from 30 to 60 minutes down to 15 seconds, manual quoting effort dropped 65%, and it passed $2M ARR within six months. Pricing, packaging and adoption sat with me, including the unglamorous calls about what we stopped investing in.\n\nWhen agents become the main consumer of the platform, does pricing stay tied to resources, or move to work completed? Happy to connect."
+    },
+    {
+      "id": 181,
+      "date_found": "2026-08-18",
+      "title": "VP of Products (Insense)",
+      "company": "Flyer One Ventures",
+      "location": "Amsterdam, North Holland, Netherlands (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4454297748/",
+      "fit": "Strong",
+      "recommendation": "Apply. Right level (Head of Product reports into this role), remote-first company, and the mandate is monetisation of a two-sided marketplace, which maps directly onto Gelato.",
+      "notes": "What they sell: A SaaS-enabled marketplace that connects brands with content creators for UGC and creator-marketing campaigns; 100,000+ creators across 35+ countries serving ~2,000 mid-sized brands.\nFunding: ~$4.9M raised (PitchBook); posting says the business is profitable, ~$13.6M revenue reported for 2025. Role is posted by Flyer One Ventures on behalf of portfolio company Insense.\nInvestors: AvanTech Ventures, DCB Ventures, Empire Group International, Starta Accelerator; Flyer One Ventures (London-based early-stage VC) is the posting entity.\nTeam size: 60+ employees across 14+ countries per the posting (third-party sources list ~124 including contractors); remote-first, founded 2016.\nRole: Owns product and commercial strategy, retention and expansion metrics, pricing and packaging, and new revenue streams. The Head of Product reports into this role. Partners with go-to-market.\nSource: Live-checked 2026-08-18, active (posted 13 hours before check). Tagged Amsterdam but the company is remote-first across 14+ countries, so Norway should be workable. Verify Norway employment before applying.",
+      "apply_by": "",
+      "cover_letter": "Insense is at the point where growth has to come from the accounts you already have. A two-sided marketplace with 100,000 creators and 2,000 brands has proven the match works. The harder question is how much each brand is worth over time, and that is a pricing, packaging and retention problem more than a supply problem.\n\nThat is close to the work I have been doing. At Gelato I run product for a SaaS-enabled marketplace that connects customers with production partners in more than 100 countries. I took GelatoConnect's AI Estimator from nothing to over $2M ARR in six months, and cut quoting time from 30 to 60 minutes down to 15 seconds. I also built Gelato+, our subscription tier, which meant getting pricing and packaging right for both consumer and business customers.\n\nI am curious where you think creator marketing sits in three years: still a campaign brands run, or a channel they staff and budget for permanently.\n\nHappy to connect."
+    },
+    {
+      "id": 182,
+      "date_found": "2026-08-18",
+      "title": "Head of Product",
+      "company": "LocalStack",
+      "location": "London, England, United Kingdom (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4450702579/",
+      "fit": "Moderate",
+      "recommendation": "Worth a look. Right level and a strong platform/dev-tools mandate, but confirm they can employ in Norway before spending time on it.",
+      "notes": "[Saved 2026-08-18]\nWhat they sell: A local cloud emulator for developers. Teams run and test AWS (plus Snowflake and Azure) workloads on a laptop or in CI without touching real cloud infrastructure. Sold to enterprise engineering teams.\nFunding: $28.2M total; $25M Series A closed November 2024.\nInvestors: Notable Capital (led the Series A), CRV, Heavybit, Kearny Jackson.\nTeam size: ~109 employees. Offices in Zurich and Vienna, remote-friendly.\nRole: Owns the product roadmap alongside leadership, builds out the AI pillar in the core product and commercialises it, grows usage of the existing emulators, and expands the suite with new cloud platform and developer-experience tools. Reporting line not stated in the posting.\nSource: Live-checked 2026-08-18, active (187 applicants). Posting says 'Fully remote' with no timezone band or country list, and the UK tag looks like a hiring-entity artifact rather than a residency rule. Confirm Norway eligibility before applying.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 183,
+      "date_found": "2026-08-18",
+      "title": "Expert Opportunity - VP of Product ($80/hr, up to $1,600/week)",
+      "company": "Ethos",
+      "location": "United Kingdom (Remote)",
+      "status": "Will not apply",
+      "source": "https://www.linkedin.com/jobs/view/4455145526/",
+      "fit": "Weak",
+      "recommendation": "Skip. This is hourly expert-network work, not a product leadership job.",
+      "notes": "[Saved 2026-08-18 - reviewed, won't apply] Hourly contract gig, not an employed product role: $80/hour, 5-20 hours per week, creating and refining AI-generated documents and decks for an AI lab. Hits the contract/freelance hard filter.\nWhat they sell: An expert network connecting experts with investors and consultancies for paid calls, speaking and advisory work.\nFunding: unknown. Backed by General Catalyst; founded by a McKinsey / SoftBank / DeepMind team.\nInvestors: General Catalyst.\nTeam size: unknown.\nRole: Paid advisory work reviewing AI-generated product-management artefacts. No team, no ownership, no employment.\nSource: Live-checked 2026-08-18, listing active. Could still be worth it as paid side work if he wants it, but it is not a job search hit.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 184,
+      "date_found": "2026-08-18",
+      "title": "Head of Product and Tech (OVO Drive)",
+      "company": "OvoEnergy",
+      "location": "United Kingdom (Hub-based hybrid: Bristol, Glasgow or London)",
+      "status": "Will not apply",
+      "source": "https://www.linkedin.com/jobs/view/4452479529/",
+      "fit": "Weak",
+      "recommendation": "Skip. UK hub-based hybrid with weekly office attendance and no sponsorship, and nothing linking them to Norway.",
+      "notes": "[Saved 2026-08-18 - reviewed, won't apply] Fails the non-Oslo hybrid test. Posting requires hub-based staff in the office at least once a week in Bristol, Glasgow or London, and states 'Unfortunately we are unable to offer sponsorship for this role.' No Norway office, no distributed-team language, no shared-investor link, so there is no reason for them to consider an Oslo-based hire.\nWhat they sell: UK energy retailer. OVO Drive is its EV proposition: the OVO Charge app, charger installations, home and public charging, and flexibility products.\nFunding: Private UK company, not VC-stage; Mitsubishi Corporation is a long-standing minority investor.\nInvestors: Mitsubishi Corporation.\nTeam size: OVO group is several thousand people; this role leads roughly 25.\nRole: Owns product and technology strategy for OVO Charge and all OVO Drive digital products, plus the budget, resourcing and delivery roadmap. Leads ~25 across product management, UX/UI, mobile and full-stack engineering, DevOps and QA. Reports to the Director of EV.\nSource: Live-checked 2026-08-18, active with 200+ applicants.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
