@@ -83,6 +83,48 @@
       "notes": "⚠️ Bulk Infrastructure previously produced a ghost listing (VP Product Strategy, archived as Not a real job). This posting was found on a live finn.no scrape and the ad was fetched and confirmed active this run.\nWhat they sell: Sustainable data centre capacity and fibre network in the Nordics. Operates campuses in Norway and Denmark and sells colocation and wholesale capacity to hyperscalers and enterprises. The N01 campus in Kristiansand is targeting 400 MW by 2026 on 100% renewable power, with a 2 GW medium-term ambition.\nFunding: PE and strategic backed. BentallGreenOak has put in over EUR 640M of equity since 2020, including EUR 350M most recently, and the company closed a EUR 410M senior secured loan in November 2025 for the N01 campus.\nInvestors: Bulk Industrier (founder Peder Nærbø, lead investor and Chairman), BentallGreenOak, and Geveran Trading (John Fredriksen).\nTeam size: unknown. Searches did not surface a reliable headcount.\nRole: Owns the build-out of Bulk's data and software platform - standing up the platform that pulls live readings off the data centre sites and transforming that data for use across the business. Owns platform architecture, cloud direction, interface layer governance and security controls, plus integration of core business systems and third-party offerings, and a sandbox where colleagues prototype ideas. Leads a platform team of DevOps, backend and data product specialists. Reports to the VP of AI & Digital.\nSource: finn.no live scrape, ad confirmed active this run. Office at Karenslyst Allé 53, Oslo, with partial home office. Søknadsfrist: Snarest (rolling, reviewed continuously).",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 188,
+      "date_found": "2026-08-24",
+      "title": "Product Director, Practice Management Software (PMS)",
+      "company": "Docplanner",
+      "location": "Barcelona, Catalonia, Spain (Remote-first within Europe)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4457873475/",
+      "fit": "Strong",
+      "recommendation": "Best fit found this run and worth applying to promptly. Director level reporting straight to the CPTO, owning five products across 12+ markets with product leaders in four countries, which is the closest structural match to the multi-market platform work at Gelato. Remote-first within Europe means Oslo works with no relocation. The AI piece (Noa) lines up with the GelatoConnect AI Estimator story. Only caveat is healthcare as a new domain.",
+      "notes": "What they sell: Booking and practice management software for doctors and clinics (ZnanyLekarz and Doctoralia brands), sold to private healthcare providers, plus a patient-facing appointment marketplace.\nFunding: ~$141M to $177M raised across 8 rounds. Unicorn at $1B valuation. Largest round was a $89.9M Series E in May 2019.\nInvestors: Goldman Sachs Investment Partners, Point Nine, One Peak, Supercharge Capital, around 24 investors in total.\nTeam size: ~4,000 employees.\nRole: Owns five PMS products (MyDr, Gipo, Clinic Cloud, Feegow and a light-version PMS) across 12+ markets. Manages product leaders in four countries and reports directly to the CPTO. Unifies product strategy across geographies, integrates the Noa AI assistant, builds growth products for small clinics, and owns doctor and clinic retention plus expansion revenue.\nSource: LinkedIn, verified live this run. Posted 1 day ago, among the first 25 applicants. Posting states \"Remote-first within Europe - work from anywhere, with hubs in Warsaw, Barcelona and beyond\", so Norway is eligible. No application deadline stated.",
+      "apply_by": "",
+      "cover_letter": "Five practice management products across twelve markets is not really a roadmap problem. It is a decision about what becomes one platform and what stays local. Get that wrong in either direction and you either break workflows doctors depend on, or you carry five codebases forever.\n\nI have spent the last few years on that exact call. At Gelato I run product for a manufacturing platform operating in over 100 countries, where every market wants something slightly different and the platform only works if most of it is shared. I also built the GelatoConnect AI Estimator from nothing to over $2M ARR in six months. It cut manual quoting effort by 65% and took quote time from 30 to 60 minutes down to 15 seconds, which changed how customers worked rather than adding a feature beside their old process.\n\nI am curious how you decide when Noa belongs inside each PMS and when it should become the layer above all of them. Happy to connect."
+    },
+    {
+      "id": 189,
+      "date_found": "2026-08-24",
+      "title": "Product Director, Innovation & New Ventures",
+      "company": "Unit4",
+      "location": "London, England, United Kingdom",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4446574564/",
+      "fit": "Moderate",
+      "recommendation": "Strong role content, uncertain location. Owning a new product portfolio end to end, including pricing, packaging and go-to-market, is a direct match for building GelatoConnect from zero. Unit4 has run Norwegian offices since 1983 and the product descends from the Norwegian-built Agresso ERP, so an Oslo base is a reasonable ask. Confirm the working arrangement before investing time, since the posting says London and does not state a remote or hybrid split.",
+      "notes": "⚠️ Non-Oslo hybrid - included because Unit4 has had Oslo and Kristiansand offices since 1983, serves around 800 Norwegian customers, and the product traces back to the Norwegian-built Agresso ERP. Verify openness to an Oslo base before applying.\nWhat they sell: Cloud ERP, financials and HR software for people-centred organisations, mainly professional services, public sector, higher education and non-profits.\nFunding: PE-owned. TA Associates bought Unit4 in 2021 in a deal valued at over $2B, with Partners Group as a minority shareholder. Advent International owned it from 2014 until then.\nInvestors: TA Associates (majority), Partners Group (minority).\nTeam size: ~4,000 employees, 6,000+ customers across 100+ countries, roughly $470M annual sales.\nRole: End-to-end ownership of a new product portfolio, covering product selection and sequencing, pricing, packaging and go-to-market, delivery capacity and standards, and portfolio metrics such as adoption and customer impact. Hires and leads the product managers in the portfolio. Described as operating with executive-level trust and autonomy; exact reporting line not stated.\nSource: LinkedIn, verified live this run. Posted 4 days ago, among the first 25 applicants. Surfaced via the worldwide-remote query but tagged London; the posting states no residency, country or timezone restriction. No application deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 190,
+      "date_found": "2026-08-24",
+      "title": "Director of Product & Engineering - Operations (m/f/d)",
+      "company": "Mews",
+      "location": "Czechia; Germany; Ireland; Sweden; United Kingdom; United States (Remote-first)",
+      "status": "New",
+      "source": "https://www.mews.com/en/careers/jobs/4902795101",
+      "fit": "Moderate",
+      "recommendation": "Good company, imperfect role and an open location question. Mews is a well funded double unicorn with Nordic investors (EQT, Kinnevik) and Sweden on its hiring list, so asking them to add Norway is a fair conversation. The reservation is scope: the posting leans engineering management (coaching engineering managers, setting engineering direction) more than product strategy, which is a step sideways from an SVP Product remit. Worth a conversation rather than a cold application.",
+      "notes": "⚠️ Norway is not on the stated hiring country list (Czechia, Germany, Ireland, Sweden, United Kingdom, United States). Sweden is on it, so a Nordic entity already exists - worth asking whether they will add Norway before applying.\nWhat they sell: Cloud hospitality operating system for hotels and accommodation providers, covering property management, payments and automation. Around 15,000 properties in 85 countries.\nFunding: ~$710M raised over 14 rounds. Most recent was a $300M Series D in January 2026 at a $2.5B valuation.\nInvestors: EQT Growth (led the Series D), Atomico, HarbourVest Partners, Kinnevik, Battery Ventures, Tiger Global, Goldman Sachs Asset Management, Notion Capital.\nTeam size: unknown - headcount not disclosed in the sources checked.\nRole: Combined product and engineering director for the Operations area inside the Front of House organisation, covering guest recognition, personalised experiences, automation and role-aware workflows. Leads engineering managers and senior engineers, sets engineering direction, and owns delivery rigour and operational health. Reporting line not stated in the posting.\nSource: Lenny's Jobs (TrueUp board), verified live this run via the Mews careers page. Remote-first with a work-from-anywhere policy for short periods, but the country list above is the real constraint. No application deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
