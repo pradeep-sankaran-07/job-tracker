@@ -125,6 +125,48 @@
       "notes": "⚠️ Norway is not on the stated hiring country list (Czechia, Germany, Ireland, Sweden, United Kingdom, United States). Sweden is on it, so a Nordic entity already exists - worth asking whether they will add Norway before applying.\nWhat they sell: Cloud hospitality operating system for hotels and accommodation providers, covering property management, payments and automation. Around 15,000 properties in 85 countries.\nFunding: ~$710M raised over 14 rounds. Most recent was a $300M Series D in January 2026 at a $2.5B valuation.\nInvestors: EQT Growth (led the Series D), Atomico, HarbourVest Partners, Kinnevik, Battery Ventures, Tiger Global, Goldman Sachs Asset Management, Notion Capital.\nTeam size: unknown - headcount not disclosed in the sources checked.\nRole: Combined product and engineering director for the Operations area inside the Front of House organisation, covering guest recognition, personalised experiences, automation and role-aware workflows. Leads engineering managers and senior engineers, sets engineering direction, and owns delivery rigour and operational health. Reporting line not stated in the posting.\nSource: Lenny's Jobs (TrueUp board), verified live this run via the Mews careers page. Remote-first with a work-from-anywhere policy for short periods, but the country list above is the real constraint. No application deadline stated.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 191,
+      "date_found": "2026-08-25",
+      "title": "Product Lead - Experience",
+      "company": "Enode",
+      "location": "Oslo, Norway (remote-first in Europe, optional Oslo office)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4456892203/",
+      "fit": "Strong",
+      "recommendation": "Apply. Target-list company, Oslo HQ, and the closest domain match found this run.",
+      "notes": "What they sell: An API infrastructure layer for the energy transition. The Connect API gives energy retailers, utilities and traders a single integration to 1000+ consumer energy devices (EVs, heat pumps, solar inverters, home batteries) across 80+ brands, plus optimisation tooling and a Flex product that turns those devices into controllable grid assets.\nFunding: ~$17.4M total across four rounds since 2020. $15M Series A led by Creandum.\nInvestors: Creandum (lead), Y Combinator, Lowercarbon Capital (Chris Sacca), BoxGroup, MyClimateJourney, Skyfall Ventures, plus angels including Matt Cohler and Andreas Lundgren (Tink).\nTeam size: ~63 employees (Jun 2026).\nRole: Owns the customer platform vision and roadmap - onboarding, self-serve, data insights, positioning, and deployment of AI within the product organisation. Sets strategy for a three-sided B2B2C platform serving energy companies, consumers and OEM device manufacturers. Reporting line and team size are not stated in the posting.\nSource: LinkedIn, verified live this run (posted 18 hours ago, 'be among the first 25 applicants'). Enode is on the April 2026 target list (Batch 3). LEVEL CAVEAT: titled 'Product Lead' and LinkedIn tags it mid-senior, with no direct reports mentioned - a step down from SVP Product. Included under the permissive Oslo rule where level is negotiable. Worth clarifying scope and whether the role can be framed as Head of Product.",
+      "apply_by": "",
+      "cover_letter": "Enode has already solved the hard integration problem. The Connect API reaches 1000+ devices across 80+ brands, and that is the part most companies never get through. The harder problem now is the one this role owns: making a three-sided platform feel simple, where the customer paying you is an energy retailer, the person holding the device is a consumer, and the hardware belongs to someone else entirely.\n\nI have run that shape of product before. At Gelato I led product for a platform that connects thousands of independent production partners across 100+ countries, where the buyer and the end recipient are never the same person. I built GelatoConnect's AI Estimator from nothing to over $2M ARR in six months. It cut manual quoting effort by 65% and took quote time from 30 to 60 minutes down to 15 seconds, which is what turned a connected network into something customers could actually self-serve.\n\nI am curious how Enode decides which parts of the experience belong to you and which belong to the energy company's own app. Happy to connect."
+    },
+    {
+      "id": 192,
+      "date_found": "2026-08-25",
+      "title": "Head of Product - Clients (f/m/d)",
+      "company": "Upvest",
+      "location": "Berlin, Germany (hybrid from Berlin/London/Tallinn hubs, or remote across Europe)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4438083079/",
+      "fit": "Moderate",
+      "recommendation": "Worth applying if the Europe-remote option genuinely extends to Norway. Confirm before investing time.",
+      "notes": "What they sell: API-first investment and securities infrastructure. Banks, fintechs and wealth managers use Upvest to offer trading, custody and pension products without building the underlying rails; it processes 100M+ orders annually.\nFunding: ~$360M total across 8 rounds. $115M Series C Dec 2024, then $125M in Mar 2026 ($90M equity plus a $35M debt facility) at a EUR 640M valuation, up from EUR 360M.\nInvestors: Sapphire Ventures and Tencent (co-leads on the 2026 round), BlackRock, Bessemer Venture Partners, Motive Partners, Notion Capital.\nTeam size: ~270-370 employees depending on source (roughly 290 is the median estimate), 70+ nationalities.\nRole: Leads one product team directly inside the Clients Tribe and guides strategy for the whole tribe (3 domain teams). Owns the roadmap for either Internal Tooling or the Upfront product. Works alongside the Director of Engineering and the VP of Product, so this sits below VP level.\nSource: LinkedIn, verified live this run (posted 5 days ago, 134 applicants). Posting says 'Work from any of our hubs in Berlin, London or Tallinn hybrid or remotely across Europe, depending on the role', plus up to 183 days a year working remotely abroad. Norway is not named and the 'depending on the role' caveat is doing real work - verify Norway eligibility before applying.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 193,
+      "date_found": "2026-08-25",
+      "title": "Product Director",
+      "company": "AddSecure",
+      "location": "Stockholm, Sweden (hybrid)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4434730104/",
+      "fit": "Moderate",
+      "recommendation": "Only pursue if AddSecure will consider an Oslo base. Right level and reporting line, wrong city.",
+      "notes": "⚠️ Non-Oslo hybrid - included because AddSecure is a Nordic group with Norwegian operations and Oslo to Stockholm is a one-hour flight, so a 2-days-a-week pattern is realistic. Verify openness to an Oslo base before applying.\nWhat they sell: Secure IoT connectivity and end-to-end solutions for alarm/security, smart buildings, rescue services and transport. Founded 1975, HQ Stockholm, 50,000+ customers and ~450,000 secure connections.\nFunding: PE-owned. Majority-owned by funds managed by Castik Capital since September 2019. Estimated annual revenue $100-500M.\nInvestors: Castik Capital (European PE, long-hold strategy).\nTeam size: ~900-1,000 employees.\nRole: Reports to the Chief Product Officer and sits on the product leadership team. Line-manages an initial team of about three product managers, expected to grow with the business.\nSource: LinkedIn, verified live this run (posted 13 hours ago, 54 applicants). Posting is in Swedish, states a hybrid model and regular business travel, and names no Norway option. PE-owned transformation setting matches the Tier 3 profile on the target list.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
