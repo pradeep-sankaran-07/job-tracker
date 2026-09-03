@@ -293,6 +293,34 @@
       "notes": "What they sell: Subscription and in-app purchase infrastructure for mobile apps - paywall management, subscription analytics, A/B testing, no-code paywall building and revenue optimisation. Sold to app developers.\nFunding: ~$2.5M disclosed across two seed rounds ($500k Dec 2020, $2M Nov 2022). Largely revenue-funded since; no later round found.\nInvestors: Surface Ventures, irrvrntVC, 500 Global, AdFirst.VC, Genesis Investments, Flyer One Ventures.\nTeam size: ~156 employees. Founded 2019 by CEO Vitaly Davydov with two co-founders.\nRole: Owns the product roadmap for a multi-product business and co-owns product P&L. Reporting line not stated in the posting.\nSource: LinkedIn, live-checked 2026-09-02, accepting applications (posted 1 day ago). Posting says \"Flexible remote work. Join us from anywhere or work onsite in our Belgrade or London offices\" - no residency, country list or timezone restriction.",
       "apply_by": "",
       "cover_letter": "Adapty started as the layer that let teams change a paywall without shipping a new build. Turning that into a multi-product business is a different job, because each new product has to earn its own place in a developer's stack rather than ride in on the first one.\n\nI have done the subscription side of this. At Gelato I ran Gelato+, a subscription product serving both consumers and business customers, where the real work was figuring out what people would keep paying for month after month. I also built the GelatoConnect AI Estimator, which went from nothing to over $2M ARR in six months and cut quote time from 30 to 60 minutes down to 15 seconds. Both were API-first products sold to technical buyers, and both were run with a team spread across several countries.\n\nThe part I would want to dig into is how you think about owning P&L across several products when they share one SDK and one customer relationship. Happy to connect."
+    },
+    {
+      "id": 203,
+      "date_found": "2026-09-03",
+      "title": "Product Director – Verification & Authentication",
+      "company": "Telesign",
+      "location": "European Union (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4459788855/",
+      "fit": "Moderate",
+      "recommendation": "Worth a look, but confirm Norway before investing time. Level and domain both fit well: Director owning a portfolio and leading a team of PMs, in identity/verification APIs, which is close to the API-first platform work at Gelato. The blocker is stated plainly in the posting: they can only hire in Spain, Germany, France, Serbia, Belgium or the UK. Norway is not on that list. Telesign is EoR-friendly and part of a large Belgian telecom group, so the list may be a capacity constraint rather than a hard rule. Ask the recruiter directly whether Norway can be added before writing anything.",
+      "notes": "⚠️ Norway is NOT on the stated hire list (Spain, Germany, France, Serbia, Belgium, UK). Verify before applying.\nWhat they sell: Phone-number and identity verification plus fraud-prevention APIs, sold to large consumer internet, fintech and marketplace companies. Telesign checks around 5 billion unique phone numbers a month.\nFunding: Not venture-funded. Subsidiary of Proximus Group (Euronext Brussels: PROX). Since January 2025 it sits inside Proximus Global, which combines Telesign, BICS and Route Mobile, at roughly EUR 3.1bn equity value. A 2021 SPAC listing at $1.3bn enterprise value was called off.\nInvestors: Owned by Proximus Group. Earlier backers included March Capital and Adams Street Partners.\nTeam size: Roughly 500-1000 employees. Worth knowing: about 98 roles were cut in early 2025 and revenue has been under pressure from falling SMS volumes, so this is a turnaround-flavoured environment rather than a growth story.\nRole: Owns the Verification & Authentication portfolio (Verify API, MFA, Silent Verification, Push, Passwordless). Leads and develops a team of product managers, owns portfolio strategy, roadmap prioritisation and business performance, working across Sales, Engineering, Fraud Ops, Legal and GTM. Reporting line is not stated in the posting.\nSource: LinkedIn, live-checked 2026-09-03 (posted 2 days ago, 29 applicants). No application deadline given.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 204,
+      "date_found": "2026-09-03",
+      "title": "Head of Strategy and Product",
+      "company": "ActAI",
+      "location": "Germany (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4460925970/",
+      "fit": "Moderate",
+      "recommendation": "Low-confidence lead. The title is in range and it is tagged Germany remote with no residency clause, so Norway is not ruled out. But almost nothing about this company checks out publicly: no funding, headcount or investor record surfaced, the job description is thin, and the identical role is posted separately for Japan and Germany, which is the same spray pattern that produces ghost listings. Do not spend real effort here until someone confirms the company is real and funded. One search on the founders would settle it.",
+      "notes": "What they sell: Says it builds proactive AI-native applications for everyday tasks. No product detail beyond that in the posting.\nFunding: unknown. No funding record found. Note that searches for \"ActAI\" mostly return ACTAI Ventures, an unrelated San Francisco VC firm founded by Bill Tai, so do not confuse the two.\nInvestors: unknown\nTeam size: unknown\nRole: Head of Strategy and Product. Posting says it drives high-priority initiatives across the business and works with leadership to solve business and product problems. No team size or reporting line given. Listed as full-time (Vollzeit).\nSource: LinkedIn, live-checked 2026-09-03, no expiry banner. Same role also posted for Japan (jobId 4460936930). Company could not be verified in enrichment - treat as unproven.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
