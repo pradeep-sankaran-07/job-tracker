@@ -157,6 +157,7 @@
   <h1>Job Tracker <span id="header-subtitle"></span></h1>
   <div class="header-right">
     <span id="last-updated"></span>
+    <button class="btn btn-ghost" id="token-btn" onclick="manageToken()"></button>
     <button class="btn btn-ghost" onclick="loadData()">↻ Refresh</button>
   </div>
 </header>
@@ -241,7 +242,9 @@ function toast(msg, type = '') {
   el.textContent = msg;
   el.className = 'show' + (type ? ' ' + type : '');
   clearTimeout(el._t);
-  el._t = setTimeout(() => el.className = '', 2800);
+  // Errors now carry instructions ("add a token with Contents: write"), so give
+  // them long enough to actually be read.
+  el._t = setTimeout(() => el.className = '', type === 'error' ? 7000 : 2800);
 }
 function statusClass(s) {
   if (!s) return 'new';
@@ -265,16 +268,113 @@ function fmtDate(d) {
 // ── Token ──────────────────────────────────────────────────────────────────
 // The token is never stored in this file - the repo is public. It lives in this
 // browser's localStorage and is only needed to write status changes back.
+//
+// Why the prompt used to appear out of nowhere: a rejected write clears the
+// saved token (see handleStatusChange). Before, ANY 403 did that - including
+// GitHub's transient secondary-rate-limit 403, which has nothing to do with the
+// token being bad. A good token could be thrown away mid-session and every
+// later status change would re-prompt with no explanation. Now only a genuine
+// credential failure clears it, and the reason is kept so the next prompt can
+// say what happened instead of appearing blank.
+const TOKEN_HINT_KEY = 'jobtracker_gh_token_hint';
+const NEW_TOKEN_URL =
+  'https://github.com/settings/personal-access-tokens/new';
+
+function tokenHelpText() {
+  return 'Create one at:\n' + NEW_TOKEN_URL + '\n\n' +
+         'Fine-grained token, Repository access: only "' + REPO + '",\n' +
+         'Permissions > Repository > Contents: Read and write.\n\n' +
+         'Set an expiry you are happy with - when it lapses, saving stops\n' +
+         'and you will land back here.\n\n' +
+         'Stored in this browser only, never in the page source.';
+}
+
 function getToken(allowPrompt = true) {
   let t = localStorage.getItem(TOKEN_KEY);
   if (!t && allowPrompt) {
-    t = (window.prompt(
-      'Paste a GitHub token with Contents: write on this repo.\n\n' +
-      'It is stored in this browser only, never in the page source.'
-    ) || '').trim();
-    if (t) localStorage.setItem(TOKEN_KEY, t);
+    const hint = localStorage.getItem(TOKEN_HINT_KEY);
+    const lead = hint
+      ? 'Your saved token stopped working:\n' + hint + '\n\nPaste a new one.\n\n'
+      : 'Paste a GitHub token with Contents: write on this repo.\n\n';
+    t = (window.prompt(lead + tokenHelpText()) || '').trim();
+    if (t) {
+      localStorage.setItem(TOKEN_KEY, t);
+      localStorage.removeItem(TOKEN_HINT_KEY);
+    }
   }
   return t;
+}
+
+// Drop the token only when GitHub actually rejected the credential, and record
+// why so the next prompt is not a mystery.
+function clearToken(reason) {
+  localStorage.removeItem(TOKEN_KEY);
+  if (reason) localStorage.setItem(TOKEN_HINT_KEY, reason);
+  updateTokenBtn();
+}
+
+function updateTokenBtn() {
+  const b = document.getElementById('token-btn');
+  if (!b) return;
+  const has = !!localStorage.getItem(TOKEN_KEY);
+  b.textContent = has ? '🔑 Token saved' : '⚠️ No token';
+  b.title = has
+    ? 'A write token is saved in this browser. Click to replace or remove it.'
+    : 'No write token saved - status changes cannot be pushed. Click to add one.';
+  b.style.color = has ? '' : '#fca5a5';
+}
+
+// Deliberate token management, so a stale token can be replaced without having
+// to trigger a failed save first.
+async function manageToken() {
+  const has = !!localStorage.getItem(TOKEN_KEY);
+  if (has && !confirm('A token is already saved in this browser.\n\nOK = replace it.\nCancel = leave it alone.')) return;
+  const t = (window.prompt(
+    (has ? 'Paste the replacement token.\n\n' : 'Paste a GitHub token with Contents: write on this repo.\n\n')
+    + tokenHelpText()
+    + '\n\nLeave this empty and press OK to remove the saved token.'
+  ) || '').trim();
+
+  if (!t) {
+    localStorage.removeItem(TOKEN_KEY);
+    localStorage.removeItem(TOKEN_HINT_KEY);
+    updateTokenBtn();
+    toast('Token removed from this browser', 'success');
+    return;
+  }
+
+  localStorage.setItem(TOKEN_KEY, t);
+  localStorage.removeItem(TOKEN_HINT_KEY);
+  updateTokenBtn();
+
+  // Check it now rather than letting the next status change be the test.
+  toast('Checking token...');
+  const problem = await tokenProblem(t);
+  if (problem) {
+    clearToken(problem);
+    toast('Token rejected: ' + problem, 'error');
+  } else {
+    toast('Token works - status changes will save', 'success');
+  }
+}
+
+// Returns null if the token can write to this repo, else a short reason.
+async function tokenProblem(t) {
+  try {
+    const r = await fetch(`https://api.github.com/repos/${REPO}`, {
+      headers: { Authorization: `token ${t}`, Accept: 'application/vnd.github+json' },
+    });
+    if (r.status === 401) return 'GitHub says the token is invalid or expired';
+    if (!r.ok)            return `GitHub returned HTTP ${r.status}`;
+    const repo = await r.json();
+    if (!repo.permissions || !repo.permissions.push) {
+      return 'token is valid but has no write access to ' + REPO +
+             ' (needs Contents: Read and write)';
+    }
+    return null;
+  } catch (e) {
+    return 'could not reach GitHub (' + e.message + ')';
+  }
 }
 
 // ── Load data ──────────────────────────────────────────────────────────────
@@ -350,6 +450,7 @@ function render() {
   document.getElementById('tab-active').textContent  = `Active (${state.jobs.length})`;
   document.getElementById('tab-archive').textContent = `Archive (${state.archive.length})`;
   document.getElementById('header-subtitle').textContent = `${state.jobs.length} active`;
+  updateTokenBtn();
 }
 
 function renderStats() {
@@ -409,7 +510,7 @@ async function handleStatusChange(select) {
 
   const token = getToken();
   if (!token) {
-    toast('No token saved - status not changed', 'error');
+    toast('No token saved - status not changed. Use the header button to add one.', 'error');
     await loadData();
     return;
   }
@@ -442,11 +543,31 @@ async function handleStatusChange(select) {
 
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
-      // 401/403: bad or expired token - drop it so the next attempt re-prompts.
-      if (res.status === 401 || res.status === 403) localStorage.removeItem(TOKEN_KEY);
+      const msg = err.message || `HTTP ${res.status}`;
+
+      // 401 is unambiguous: the credential itself is bad or expired.
+      if (res.status === 401) {
+        clearToken('GitHub said: ' + msg);
+        throw new Error('Token expired or invalid - click "⚠️ No token" to add a new one');
+      }
+
+      // 403 is overloaded. It means "valid token, not allowed to write here",
+      // but GitHub ALSO returns 403 for secondary rate limits and abuse
+      // detection, which are temporary and say nothing about the token. The old
+      // code deleted the token on every 403, so one burst of saves could bin a
+      // perfectly good token and leave the page prompting forever. Only treat it
+      // as a credential problem when GitHub's own message says so.
+      if (res.status === 403) {
+        if (/rate limit|secondary|abuse|retry/i.test(msg)) {
+          throw new Error('GitHub is rate limiting writes - wait a minute and try again (token kept)');
+        }
+        clearToken('GitHub said: ' + msg);
+        throw new Error('Token lacks write access to this repo - add one with Contents: Read and write');
+      }
+
       // 409: someone wrote between our read and this PUT. The reload below picks
       // that up, and the change can be made again against the newer file.
-      throw new Error(err.message || `HTTP ${res.status}`);
+      throw new Error(msg);
     }
 
     const result = await res.json();
