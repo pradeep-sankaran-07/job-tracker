@@ -321,6 +321,20 @@
       "notes": "What they sell: Says it builds proactive AI-native applications for everyday tasks. No product detail beyond that in the posting.\nFunding: unknown. No funding record found. Note that searches for \"ActAI\" mostly return ACTAI Ventures, an unrelated San Francisco VC firm founded by Bill Tai, so do not confuse the two.\nInvestors: unknown\nTeam size: unknown\nRole: Head of Strategy and Product. Posting says it drives high-priority initiatives across the business and works with leadership to solve business and product problems. No team size or reporting line given. Listed as full-time (Vollzeit).\nSource: LinkedIn, live-checked 2026-09-03, no expiry banner. Same role also posted for Japan (jobId 4460936930). Company could not be verified in enrichment - treat as unproven.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 205,
+      "date_found": "2026-09-05",
+      "title": "Director of Product Management - Data Streaming",
+      "company": "HiveMQ",
+      "location": "Berlin, Germany (remote-first company)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4413589700/",
+      "fit": "Moderate",
+      "recommendation": "Worth applying - strongest domain match found in weeks. Pradeep already applied to HiveMQ's VP of Product Management role (tracker id 2), so he is a known name in their system. Confirm Norway hiring before investing time: ask the recruiter directly whether they can employ from Norway, since the posting is tagged Berlin and Madrid.",
+      "notes": "What they sell: Enterprise MQTT messaging platform that moves data between IoT devices and enterprise IT systems, sold to industrial Fortune 500 buyers - Mercedes-Benz, Siemens, Honeywell, ZF and Liberty Global are named customers.\nFunding: ~$53M total. Series A of ~$42M (led by Molten Ventures) on top of an ~$11M seed.\nInvestors: Molten Ventures (lead), Mubadala Capital, Illusion, Earlybird, Senovo, New Forge.\nTeam size: ~158 employees. Remote-first, HQ in Landshut/Berlin, Germany.\nRole: Owns the Data Streaming portfolio - the connectivity and transport layer under their Industrial AI Platform, centred on the HiveMQ Enterprise Broker and its extensibility system. Sets strategy for the next-generation Core Broker and for making Agent Experience a first-class design target. Starts as an individual contributor with a stated path to building and leading a team as the portfolio scales. Reporting line not stated. Base range EUR 120,000-154,000.\nSource: LinkedIn, live-checked 2026-09-05, actively accepting applications (posted within 24h, 200+ applicants). Tagged Berlin with a parallel Madrid posting; HiveMQ describes itself as remote-first with staff across many countries, but Norway is not confirmed as a hiring location - verify before applying. No application deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
