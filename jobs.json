@@ -27,6 +27,34 @@
       "notes": "Warm intro: Pradeep knows the Insight talent team - reach out directly rather than applying cold.\nWhat they sell: AI agents that run supplier negotiations autonomously for large enterprises, mainly tail spend and supplier contract terms; buyers are procurement teams at Fortune 500 companies.\nFunding: ~$108M total across 5 rounds. Series C $54M led by Insight Partners; Series B $20M (Jul 2024) led by Karma Ventures.\nInvestors: Insight Partners, Karma Ventures, Atomico, Project A, 3VC, Maersk, Portfolion, SuperAngel.\nTeam size: ~166 employees (May 2026). Estonian-founded.\nRole: Owns the Supplier Management product line as a business - strategy, roadmap, engineering execution and design direction. Described as the executive owner working across Product, Engineering, Design, Revenue, Solutions, Deployments, Customer Success and Alliances. Reporting line not stated in the posting.\nSource: Live-checked 2026-09-08, Apply button present. Fully remote, no residency or timezone restriction stated. No deadline given.",
       "apply_by": "",
       "cover_letter": "Pactum has already proved that software can run a supplier negotiation on its own. Turning that into a product line with its own numbers is a different job, and that is what running Supplier Management as a business means. It is the part I have done before.\n\nAt Gelato I built GelatoConnect's AI Estimator and took it from nothing to over $2M ARR in six months. It cut manual quoting effort by 65% and brought quote time down from 30 to 60 minutes to about 15 seconds, across a supplier network in 100 countries. Same shape of problem as yours: a slow, human, high volume commercial process that software can do better, and a lot of suppliers on the other side who have to trust the result.\n\nAs more spend moves to agents, where do you draw the line between what the agent settles on its own and what a person still signs off? Happy to connect."
+    },
+    {
+      "id": 207,
+      "date_found": "2026-09-10",
+      "title": "Chief Technology and Product Officer",
+      "company": "saas.group",
+      "location": "Remote, Europe (Central European working hours)",
+      "status": "New",
+      "source": "https://job-boards.eu.greenhouse.io/saasgroup/jobs/4970502101",
+      "fit": "Strong",
+      "recommendation": "Apply",
+      "notes": "What they sell: ScraperAPI is a web scraping and structured data API - developers and data teams pay a subscription to pull web data at scale without managing proxies, CAPTCHAs or anti-bot workarounds. It is one brand inside saas.group's portfolio.\nFunding: saas.group is a bootstrapped-style SaaS acquirer (founded 2018, Tim Schumacher / Ulrich Essmann / Tobias Schlottke), not VC-backed in the usual sense. It has made 17 acquisitions and holds a portfolio of ~9-17 brands. ScraperAPI was acquired Aug 2020 (5th acquisition, advised by FE International).\nInvestors: saas.group itself is the investor/owner. Founder-funded plus debt; no external growth round surfaced.\nTeam size: The role leads a 25+ person product and engineering org across multiple countries. saas.group's central team is small (~6, incl. 2 partners); the brands run semi-independently.\nRole: Owns end-to-end product AND technology strategy for ScraperAPI - scraping infrastructure, proxy networks and structured data API products. Reports directly to the CEO and sits at the leadership table with board exposure. Combined CTO+CPO scope.\nSource: Greenhouse posting verified live with an active Apply button on 2026-09-10. Application asks 'Are you currently based in Europe or the UK, and able to work primarily within Central European working hours?' - Oslo qualifies on both. No stated deadline. Note: this same role is being reposted anonymously across 6+ countries by Jobgether (a recruitment intermediary); apply via the Greenhouse link, not Jobgether.",
+      "apply_by": "",
+      "cover_letter": "At ScraperAPI everything comes down to whether a request gets through, and that is getting harder as anti-bot systems improve. Putting technology and product under one person suggests you treat the roadmap and the infrastructure as one decision. That is how I have worked.\n\nI was SVP Product at Gelato, a global manufacturing platform running in over 100 countries, API-first, with product teams spread across time zones. I built the AI quoting engine in GelatoConnect and took it from nothing to over $2M ARR in six months. It cut quote time from 30-60 minutes to 15 seconds and removed about 65% of the manual work. Before Gelato I spent 11 years at Schlumberger across 15 countries, where systems had to work in the field or the job stopped.\n\nOne thing I would want to work on with you: as AI agents become the main buyers of web data, does ScraperAPI keep selling requests, or start selling the finished data?\n\nHappy to connect."
+    },
+    {
+      "id": 208,
+      "date_found": "2026-09-10",
+      "title": "Chief Product Officer",
+      "company": "Nutrameg",
+      "location": "Riga, Latvia (100% remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4463577628/",
+      "fit": "Moderate",
+      "recommendation": "Consider",
+      "notes": "What they sell: A direct-to-consumer, mobile-first subscription platform in health, wellness and fitness. The posting says it is 'used by millions'. The specific app/brand is not named in the listing, which is worth pinning down before applying.\nFunding: Unknown - no VC rounds surfaced. Latvian registry data suggests a self-funded, performance-marketing-driven operation. Nutrameg SIA (inc. Jan 2022) reported net sales up 364% and total assets up 212% in 2024.\nInvestors: Unknown / none disclosed.\nTeam size: Small relative to the 'millions of users' claim. Two Riga entities: Nutrameg SIA ~22 employees (2023) and Nutrameg Latvia SIA ~15 employees (2023).\nRole: Full ownership of product direction for the subscription platform. C-level title. Reporting line not stated in the posting.\nSource: LinkedIn posting verified live 2026-09-10, posted 1 day earlier, 45 applicants. Body states '100% remote. Working from wherever you do the best work' with no country, residency or timezone restriction, so Norway is eligible. Fit is Moderate not Strong: level and location are right, but D2C consumer subscription is a step away from Pradeep's B2B platform and marketplace background. Small headcount for a CPO seat is worth probing.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
