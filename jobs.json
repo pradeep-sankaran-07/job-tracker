@@ -139,6 +139,34 @@
       "notes": "Not Oslo: Time is in Rogaland, near Bryne, roughly a flight or a long drive from Oslo. The posting does not say whether the role is on-site, hybrid or remote. Confirm before applying.\nCompany could not be verified beyond the LinkedIn posting - treat the details below as thin.\nWhat they sell: Describes itself as building infrastructure, tools and frameworks for autonomous AI agents (\"building blocks for the agentic future\"). Customers and actual product are not described publicly.\nFunding: unknown. No funding round or investor found in a genuine search.\nInvestors: unknown.\nTeam size: ~9 people (LinkedIn shows the 2-10 employee band).\nRole: Founding product leadership position. Owns product vision and roadmap, works directly with the founders, engineering and design on core product and platform strategy. Reports to the founders.\nSource: LinkedIn Norway search. Verified live this run - posted 3 days ago, \"be among the first 25 applicants\", no closure language. Searches for a Norwegian registration (Bronnoysund) and for Norwegian press found nothing; the only identifiable employee on the LinkedIn company page is based in India, and the company website (nenuai.com) has an expired TLS certificate. So the Norway connection rests on the job posting's location tag alone.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 215,
+      "date_found": "2026-09-21",
+      "title": "SVP, Product",
+      "company": "Jobgether",
+      "location": "Switzerland (Remote) - fully remote, globally distributed",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4466844068/",
+      "fit": "Moderate",
+      "recommendation": "Worth a look for the location alone: genuinely remote with no residency or timezone constraint, which is rare. Hold back on the level. An SVP Product title at a 39-person seed-stage company is not the same seat as SVP Product at Gelato, and the scope will be smaller than the title suggests. Check what the product organisation actually is before spending time on it.",
+      "notes": "What they sell: an AI job matching platform and remote-jobs search engine; free for candidates, employers pay to post roles and get matched.\nFunding: ~$2.7M total raised since founding in 2020 (sources range $1.48M to $2.68M). Seed stage, not a scale-up.\nInvestors: finance&invest.brussels, 4Ventures.\nTeam size: ~39 employees. HQ Brussels, Belgium.\nRole: owns the full product portfolio and strategy, decides where AI agents deploy across the marketplace, talent and client experiences, sets the planning cadence and prioritisation model, owns team structure and hiring. Reports to the CEO on the executive team.\nSource: LinkedIn, live-checked 2026-09-21, still accepting applications. Posting says fully remote with a globally distributed team and states no timezone or residency requirement. Caveat: Jobgether also posts roles on behalf of partner companies, so confirm the employer is Jobgether itself before applying. No deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 216,
+      "date_found": "2026-09-21",
+      "title": "Chief Product Officer (AdTech)",
+      "company": "Eskimi",
+      "location": "Vilnius, Vilniaus, Lithuania (hybrid)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4468006740/",
+      "fit": "Moderate",
+      "recommendation": "The strongest of the two this run. A real CPO seat at a 226-person profitable company, owning revenue and platform vision rather than delivery metrics, which is the shape of the GelatoConnect work. Adtech is new ground for him. Confirm they will take an Oslo-based CPO before putting any effort in, because that is the thing most likely to kill it.",
+      "notes": "⚠️ Non-Oslo hybrid - included because the posting offers remote work in places with no office, the company is already distributed across markets, and it expects quarterly international travel anyway. Verify openness to an Oslo-based hire before applying.\nWhat they sell: a full-stack programmatic advertising platform (DSP, SSP, DOOH, retail media, DeepContext AI) with an in-house creative studio, sold to advertisers and agencies, strongest in emerging markets.\nFunding: bootstrapped. No outside venture funding raised. Founded 2010.\nInvestors: none, self-funded.\nTeam size: ~226 employees (201-500 range). HQ Vilnius.\nRole: owns the whole product lifecycle across the suite, judged on revenue and customer adoption rather than delivery metrics. Owns positioning, pricing and launch, negotiates data, technology and inventory partnerships, sets the Advertising OS vision and its commercial rollout, and leads the product group.\nSource: LinkedIn, live-checked 2026-09-21, accepting applications, posted 2 days ago. Hybrid in cities with offices, remote options elsewhere, plus up to one month of work-away days a year. Requires willingness to travel internationally every quarter. No deadline stated.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
