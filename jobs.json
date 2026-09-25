@@ -181,6 +181,34 @@
       "notes": "What they sell: Jobgether is an AI job matching platform and remote-jobs search engine. It is not the employer here. It posts and screens this role for an undisclosed partner company described as a fast-growing, AI-native B2B SaaS business.\nFunding: Jobgether has raised about $2.7M since 2020, seed stage. The hiring company's funding is undisclosed.\nInvestors: Jobgether is backed by finance&invest.brussels and 4Ventures. The hiring company's investors are undisclosed.\nTeam size: Jobgether is about 39 people. The hiring company's size is undisclosed.\nRole: owns the product roadmap across integrations, lifecycle and core platform capabilities, and sets up product management practice where there is none today. Covers strategy, team leadership and cross-functional work with engineering and go-to-market. Described as a senior product leadership seat; reporting line not stated.\nSource: LinkedIn, live-checked 2026-09-22, still accepting applications, fewer than 25 applicants. Posting is tagged Drammen, Norway and is fully remote, but requires daily availability aligned to US Eastern Time working hours. Same role is posted across several European countries, so the Norway tag is not a Norway requirement. Employer name withheld until Jobgether matches you. No deadline stated.",
       "apply_by": "",
       "cover_letter": ""
+    },
+    {
+      "id": 218,
+      "date_found": "2026-09-25",
+      "title": "Head of Product Management - Unica",
+      "company": "HCLSoftware",
+      "location": "Drammen, Norway / EMEA (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4471442046/",
+      "fit": "Moderate",
+      "recommendation": "Moderate. Head-level role you could do from Oslo (LinkedIn tags it EMEA remote, the posting names Drammen). But it is a big-company enterprise marketing platform with a large legacy installed base, not a funded scale-up, and they ask for deep campaign/CDP/marketing automation experience you do not have. Only worth a look if Puzzel and Spryker both fall through.",
+      "notes": "Live on LinkedIn 2026-09-25 (posted ~22h earlier, 78 applicants).\nWhat they sell: HCL Unica+, an enterprise marketing automation platform (campaign management, customer data, decisioning, real-time personalisation), relaunched in June 2026 as an AI-first product with AI agents for segmentation, content and measurement. Sold to large enterprises such as banks, telcos and retailers.\nFunding: public. HCLSoftware is the software division of HCLTech (NSE: HCLTECH).\nInvestors: n/a (publicly listed parent).\nTeam size: unknown for the division; HCLTech group is roughly 220,000 people.\nRole: owns the multi-release roadmap across all Unica+ modules and decides what gets built, including privacy and data-residency requirements. Leads a PM team spread across regions (module PMs, technical PMs, product ops). Reports to senior leadership, exact line not stated. Asks for 12+ years PM, 5+ managing PMs, enterprise B2B with a big installed base, and campaign/CDP/marketing automation depth.\nSource: LinkedIn search (Norway, VP Product/Head of Product queries). Location is Drammen per posting, EMEA (Remote) per search card. Confirm the arrangement before applying.",
+      "apply_by": "",
+      "cover_letter": ""
+    },
+    {
+      "id": 219,
+      "date_found": "2026-09-25",
+      "title": "Product Director - B2C",
+      "company": "Holafly",
+      "location": "Lisboa, Lisbon, Portugal (Remote)",
+      "status": "New",
+      "source": "https://www.linkedin.com/jobs/view/4469698308/",
+      "fit": "Moderate",
+      "recommendation": "Moderate. Fully remote and a real scale-up, and the ask (subscriptions, checkout and payments, recurring value, AI in practice) lines up with Gelato+ and your e-commerce work. But it is B2C and a Director title, both below your stated bar of VP Product in B2B software. Keep as a fallback only.",
+      "notes": "Live on LinkedIn 2026-09-25 (posted ~15h earlier, under 25 applicants).\nWhat they sell: eSIM data plans for international travellers, bought online by consumers, with a growing subscription offer. Based in Barcelona.\nFunding: essentially bootstrapped (about $113K early funding in 2019). Profitable at scale: over $500M cumulative revenue, about $200M revenue in 2024.\nInvestors: none notable.\nTeam size: ~720-780 employees (Tracxn/Crustdata, mid 2026), up about 23% year on year.\nRole: owns the end-to-end B2C product vision across acquisition, activation and support, checkout and payments, and recurrence. Sets strategy, owns business outcomes, scales and mentors the product team. Reporting line not stated. Wants B2C scale-up experience (travel, subscriptions or e-commerce), commercial fluency with data, and hands-on AI use.\nSource: LinkedIn EEA remote query. Posting says 'Fully Remote & Flexible' with no residency, timezone or language rule. Verify that Norway residency is fine before applying.",
+      "apply_by": "",
+      "cover_letter": ""
     }
   ],
   "archive": [
